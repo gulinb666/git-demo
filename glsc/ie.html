@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请升级您的浏览器 - 顾里商城</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        .main {
+            width: 100%;
+        }
+        .main .logo {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: url("images/logo.png") no-repeat;
+            background-size: cover;
+        }
+        .main p {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+        .main .schema-browser {
+            margin: 20px 0 0 500px;
+        }
+        .main .schema-browser a {
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            margin-right: 20px;
+            padding-left: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 60px;
+        }
+	.main .schema-browser a:hover {
+	    border: 1px solid #ffc0cb;
+	}
+        .main .schema-browser .Chrome {
+            background: url("images/Chrome.jpg") no-repeat;
+            background-size: 60px 60px;
+        }
+        .main .schema-browser .Firefox {
+            background: url("images/Firefox.jpg") no-repeat;
+            background-size: 80px 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="index.html" class="logo" title="顾里商城"></a>
+        <p>微软已宣布停止IE浏览器的支持，可能会有安全风险</p>
+        <p>建议更换以下浏览器，继续访问</p>
+        <div class="schema-browser">
+            <a href="https://www.google.com/intl/zh-CN/chrome/" class="Chrome" target="_blank">Chrome</a>
+            <a href="https://www.mozilla.org/zh-CN/firefox/new/" class="Firefox" target="_blank">Firefox</a>
+        </div>
+    </div>
+</body>
+</html>

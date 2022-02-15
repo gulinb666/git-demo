@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "phone/shopcar.html"; //手机
+        }
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+            window.location.href = "ie.html";
+        }
+    </script>
+    <title>顾里商城 - 购物车</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shopcar.css">
+</head>
+<body>
+    <!-- 顶部导航栏 start -->
+    <div class="header-top">
+        <!-- 顶部导航的左侧导航 -->
+        <div class="left">
+            <a href="login.html">你好，请登录</a>&nbsp;
+            <a href="register.html" style="color: #ffc0cb;">免费注册</a>
+        </div>
+        <!-- 顶部导航的右侧导航 -->
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="member.html" class="indent">我的订单</a>
+                </li>
+                <li>
+                    <a href="member.html" class="member">个人中心</a>
+                </li>
+                <li id="serVice">
+                    <span>客户服务</span>
+                    <div class="service" id="service">
+                        <h3 style="text-align: center;">客户服务</h3>
+                        <a href="" style="display: inline-block;margin-top: 5px;margin-left: 5px;margin-bottom: 5px;">服务</a>
+                    </div>
+                </li>
+                <li id="Phone">
+                    <span>手机商城</span>
+                    <div class="phone" id="phone">
+                        <h3 style="margin-bottom: 10px;text-align: center;">手机商城</h3>
+                    </div>
+                </li>
+                <li id="navigAtion">
+                    <span>网站导航</span>
+                    <div class="navigation" id="navigation">
+                        <h3 style="margin-bottom: 10px;text-align: center;">网站导航</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部导航栏 end -->
+    <!-- 头部 start -->
+    <div class="header">
+        <div class="logo">
+            <h1 style="margin-left: -9999px;">顾里商城</h1>
+            <a href="index.html" title="顾里商城"></a>
+        </div>
+        <!-- 搜索框 start -->
+        <div class="search">
+            <form action="search.html">
+                <input type="text" class="search_inp" name="search" placeholder="黑丝">
+                <input type="submit" class="search_btn" value="&#xe82e;">
+            </form>
+        </div>
+        <!-- 搜索框 end -->
+        <!-- 搜索框下面的活动 start -->
+        <div class="activity">
+            <ul class="activity_module">
+                <li>
+                    <a href="#" style="color: #ffc0cb;" title="满199减99元">满199减99元</a>
+                </li>
+                <li>
+                    <a href="#" title="0元购">限时0元抢</a>
+                </li>
+                <li>
+                    <a href="#" title="超低价秒杀">低价秒杀</a>
+                </li>
+                <li>
+                    <a href="#" title="领取优惠券">优惠券</a>
+                </li>
+                <li>
+                    <a href="#" title="热卖新品">爆款新品</a>
+                </li>
+                <li>
+                    <a href="#" title="新年大促">新年大促</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 搜索框下面的活动 end -->
+        <h2 style="margin-top: -40px;margin-left: 100px;color: #ffc0cb;">全部商品 <i id="count"></i></h2>
+    </div>
+    <!-- 头部 end -->
+    <!-- 主体部分 start -->
+    <div class="main">
+        <div class="function_all">
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="top_all">
+                        <span>全选</span>
+                    </td>
+                    <td>商品</td>
+                    <td>单价</td>
+                    <td>数量</td>
+                    <td>小计</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+        <ul class="commodity" id="commodity">
+            <li class="null" id="null">购物车空空如也，请先逛逛吧~</li>
+            <!-- 这部分的li是通过js或者后台添加，现在只是演示 -->
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥413.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥413.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <input type="checkbox" class="commodity_select">
+                <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                <a href="commodity_details.html" class="commodity_title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                <span class="unit_price">￥400.00</span>
+                <span class="minus">-</span>
+                <input type="text" value="1" class="number">
+                <span class="plus">+</span>
+                <span class="subtotal">￥400.00</span>
+                <ul class="operation">
+                    <li>
+                        <a href="javascript:;" class="remove">删除</a>
+                    </li>
+                    <li>
+                        <a href="">移入关注</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="function_all submit">
+            <pre>  <input type="checkbox" class="all" id="bottom_all"><span> 全选</span>    <a href="javascript:;" id="remove_batch">删除选中的商品</a>     <a href="">移入关注</a>     <a href="javascript:;" id="clear_all">清理购物车</a></pre>
+            <div class="submit_price">
+                <span>已选择<i style="color: #ff0000;font-size: 16px;" id="num"> 0 </i>件商品</span>
+                <span style="display: inline-block;margin-right: 10px;">总价：<i style="color: #ff0000;font-size: 16px;" id="total_price">￥0.00</i> 元</span>
+                <a href="indent.html" class="go_buy">去结算</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体部分 end -->
+    <!-- 底部 start -->
+    <div class="footer">
+        <a href="">关于我们 |</a>
+        <a href="">联系我们 |</a>
+        <a href="">联系客服 |</a>
+        <a href="">友情链接 |</a>
+        <a href="">手机商城 |</a>
+        <a href="">隐私政策 |</a>
+        <a href="">免责声明</a>
+        <p style="margin-top: 5px;color: #666;">copyright: © 2022-2044 顾里商城ggsch.cn 版权所有</p>
+    </div>
+    <!-- 底部 end -->
+    <!-- 确认框代码 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        i {
+            font-style: normal;
+        }
+        .shade {
+            display: none;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.15);
+        }
+        .shade .confirm {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 450px;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+        }
+        .shade .confirm .title {
+            margin: 10px 0 0 15px;
+            font-size: 20px;
+        }
+        .shade .confirm .whether {
+            display: inline-block;
+            margin: 30px 0 0 70px;
+            color: #FFD700;
+        }
+        .shade .confirm .error,
+        .shade .confirm .success {
+            float: right;
+            width: 80px;
+            height: 40px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .shade .confirm .error {
+            margin-right: 10px;
+            transition: all 0.2s;
+        }
+        .shade .confirm .success {
+            margin-right: 20px;
+            border: 1px solid #409eff;
+            background-color: #409eff;
+            color: #fff;
+        }
+        .shade .confirm .error:hover {
+            border: 1px solid #409eff;
+        }
+    </style>
+    <!-- 提示信息 start -->
+    <!-- 遮罩层 start -->
+    <div class="shade" id="box">
+        <!-- 提示框信息 start -->
+        <div class="confirm">
+            <p class="title">提示信息</p>
+            <span class="whether" id="con"></span>
+            <br />
+            <button class="success">我知道啦</button>
+        </div>
+        <!-- 提示框信息 end -->
+    </div>
+    <!-- 遮罩层 end -->
+    <!-- 提示信息 end -->
+    <!-- 遮罩层 start -->
+    <div class="shade" id="shade">
+        <!-- 提示框信息 start -->
+        <div class="confirm">
+            <p class="title">提示</p>
+            <span class="whether">警告(warning)<i style="color: #000;">：</i><i style="color: #000;" id="content"></i></span>
+            <br />
+            <button class="success" id="success">确定</button>
+            <button class="error" id="error">取消</button>
+        </div>
+        <!-- 提示框信息 end -->
+    </div>
+    <!-- 遮罩层 end -->
+    <script src="js/jQuery.mini.js" type="text/javascript"></script>
+    <script src="js/Flibrary.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/shopcar.js" type="text/javascript"></script>
+</body>
+</html>

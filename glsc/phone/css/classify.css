@@ -1,0 +1,62 @@
+.left-classify {
+    position: fixed;
+    width: 8rem;
+    height: 91%;
+    background-color: #999;
+    overflow: auto;
+}
+.left-classify ul {
+    width: 100%;
+}
+.left-classify ul li {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+.white {
+    background-color: #fff !important;
+    color: #ffc0cb !important;
+}
+.right-goods {
+    position: fixed;
+    width: 60%;
+    height: 91%;
+    margin-left: 38%;
+    background-color: #fff;
+    overflow: auto;
+}
+.right-goods ul a li {
+    position: relative;
+    width: 100%;
+    height: 4.8rem;
+    margin-top: .8rem;
+    border-bottom: 1px solid #ccc;
+}
+.right-goods ul a li img {
+    width: 4.2667rem;
+    height: 4.2667rem;
+}
+.right-goods ul a li .title {
+    position: absolute;
+    top: .2667rem;
+    left: 4.5333rem;
+    width: 9.0667rem;
+    /*强制一行显示*/
+    white-space: nowrap;
+    /*溢出部分隐藏*/
+    overflow: hidden;
+    /*溢出部分显示省略号*/
+    text-overflow: ellipsis;
+}
+.right-goods ul a li .price {
+    position: absolute;
+    bottom: .8rem;
+    left: 4.4rem;
+    color: #ff0000;
+}
+.classify-none {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+}

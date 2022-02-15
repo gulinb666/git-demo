@@ -1,0 +1,25 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main .title {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.main .content {
+    margin: 10px 0 0 30px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.main ul li {
+    display: inline-block;
+    margin: 10px 0 0 30px;
+    font-size: 16px;
+}
+.main ul li .author,
+.main ul li .release_time,
+.main ul li .read_count {
+    color: skyblue;
+}

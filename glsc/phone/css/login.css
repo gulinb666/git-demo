@@ -1,0 +1,19 @@
+.login {
+    width: 90%;
+    height: 13.3333rem;
+    margin: 1.3333rem 0 0 5%;
+    background-color: #fff;
+}
+.login span {
+    margin-left: 1.3333rem;
+}
+.login input {
+    width: 13.3333rem;
+    height: 2.6667rem;
+    border: 1px solid #ccc;
+}
+.login input[type="submit"] {
+    margin-left: 3.7333rem;
+    background-color: #ffc0cb;
+    color: #fff;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script>
+        if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "../article_list.html"; //电脑
+        }
+    </script>
+    <title>顾里商城 - 文章列表</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/article_list.css">
+</head>
+<body>
+    <div class="main">
+        <h2>文章列表</h2>
+        <div class="none" id="hide">
+            <h3 style="text-align: center;">这里暂时还没有文章哦，请等待管理员添加吧~</h3>
+        </div>
+        <ul>
+            <li class="goods-list">
+                <img src="../upload/2022102_1.jpg" alt="">
+                <a href="article_content.html">[通知] 满减活动！</a>
+                <span>浏览量：<i>6666</i></span>
+            </li>
+            <li class="goods_list">
+                <img src="../upload/2022102_1.jpg" alt="">
+                <a href="article_content.html">[通知] 公告！</a>
+                <span>浏览量：<i>6666</i></span>
+            </li>
+        </ul>
+        <!-- 分页 start -->
+        <div class="ui-paging">
+        <a href="javascript:;" class="a icon forbid">上一页</a>
+        <a href="javascript:;" class="active">1</a>
+        <a href="javascript:;" class="a">2</a>
+        <a href="javascript:;" class="a">...</a>
+        <a href="javascript:;" class="a">7</a>
+        <a href="javascript:;" class="a">8</a>
+        <a href="javascript:;" class="a icon">下一页</a>
+    </div>
+    <!-- 分页 end -->
+    </div>
+    <!-- 底部 start -->
+    <footer class="footer">
+        <a href="index.html">首页</a>
+        <a href="classify.html">分类</a>
+        <a href="order.html">订单</a>
+        <a href="shopcar.html">购物车</a>
+        <a href="user.html" class="pink">我的</a>
+    </footer>
+    <!-- 底部 end -->
+    <script src="../js/jQuery.mini.js" type="text/javascript"></script>
+    <script src="../js/Flibrary.js" type="text/javascript"></script>
+    <script src="js/list_common.js" type="text/javascript"></script>
+</body>
+</html>

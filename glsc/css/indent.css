@@ -1,0 +1,232 @@
+﻿.header {
+    height: 180px;
+}
+.main {
+    width: 1000px;
+}
+.main .indent {
+    width: 100%;
+    margin-left: 100px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: default;
+}
+.main .indent .address,
+.main .indent .commodity_details,
+.main .indent .pay {
+    width: 95%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.main .indent .pay a:hover {
+    border: 1px solid #ffc0cb;
+}
+.main .indent .add_address {
+    float: right;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    color: #0000ff;
+}
+.main .indent .add_address:hover {
+    color: #ffc0cb;
+}
+.main .indent .commodity_details ul li {
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: 1px dashed #00ffff;
+}
+.main .indent .commodity_details ul li .commodity_img {
+    width: 50px;
+    height: 80px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+.main .indent .commodity_details ul li .title {
+    overflow: hidden;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    margin-left: 10px;
+    /*限制在一个块元素显示的文本行数*/
+    -webkit-line-clamp: 2;
+    /*设置或检索伸缩盒对象的子元素的排列方式*/
+    -webkit-box-orient: vertical;
+}
+.main .commodity_details ul li .subtotal,
+.main .commodity_details ul li .copies {
+    display: inline-block;
+    font-size: 14px;
+}
+.main .indent .commodity_details ul li .subtotal {
+    margin-left: 450px;
+    color: #ff0000;
+}
+.main .indent .commodity_details ul li .copies {
+    margin-left: 100px;
+}
+.main .indent .commodity_details ul li .title:hover {
+    color: #ffc0cb;
+}
+.main .indent .pay {
+    height: 40px;
+}
+.main .indent .pay .pays {
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+}
+.main .indent .pay .pays img {
+    width: 30px;
+    height: 28px;
+    margin-top: -4px;
+    vertical-align: middle;
+}
+.main .indent .pay .pays:nth-child(2) {
+    width: 85px;
+}
+.main .indent .pay .pays:nth-child(3) {
+    width: 100px;
+}
+.main .indent .pay .pays:nth-child(4) {
+    width: 120px;
+}
+.main .indent .pay .pays:nth-child(5) {
+    width: 100px;
+}
+.main .handle_box {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0 0 100px;
+    background-color: #999;
+}
+.main .handle_box .handle {
+    float: right;
+    margin: 10px 30px 0 0;
+}
+.main .go_pay {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 950px;
+    background-color: #ffc0cb;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+.main .go_pay:hover {
+    opacity: 0.9;
+}
+.add_address_fixed_box {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.15);
+}
+.add_address_fixed_box .add_address_fixed {
+    display: block;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+.add_address_fixed_box .add_address_fixed .add_title {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #999;
+    line-height: 40px;
+}
+.add_address_fixed_box .add_address_fixed form span {
+    display: inline-block;
+    margin: 10px  0 0 22px;
+}
+.add_address_fixed_box .add_address_fixed form input {
+    margin-left: 5px;
+    border: 1px solid #ccc;
+}
+.add_address_fixed_box .add_address_fixed form .select_yes {
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+}
+.add_address_fixed_box .add_address_fixed form .save {
+    width: 130px;
+    height: 30px;
+    margin: 10px 0 0 76px;
+    border-radius: 5px;
+    background-color: #ffc0cb;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+/* 选择地址下拉菜单样式 start */
+.select_address {
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 143px;
+    width: 400px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+.select_address .province_box,
+.select_address .city_box,
+.select_address .street_box {
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    margin-top: 10px;
+}
+.select_address .province_box {
+    margin-left: 2px;
+}
+.select_address .city_box,
+.select_address .street_box {
+    margin-left: 10px;
+}
+.select_address .province_box .province,
+.select_address .city_box .city,
+.select_address .street_box .street {
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.select_address .province_minute {
+    width: 100%;
+}
+.select_address .province_minute ul li {
+    float: left;
+    margin: 20px;
+}
+.pink {
+    color: #ffc0cb !important;
+}
+.select_address .province_box .province:hover,
+.select_address .city_box .city:hover,
+.select_address .street_box .street:hover {
+    color: #ffc0cb;
+}
+.select_address .province_minute ul li a:hover {
+    color: #ffc0cb;
+}
+/* 选择地址下拉菜单样式 end */
+.pay_pink {
+    border: 1px solid #ffc0cb !important;
+}

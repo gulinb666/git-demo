@@ -1,0 +1,21 @@
+.form {
+    width: 90%;
+    margin: .8rem 0 1.3333rem 5%;
+    background-color: #fff;
+}
+.form form input[type="text"] {
+    width: 13.3333rem;
+    height: 2.1333rem;
+    border: 1px solid #ccc;
+}
+.form form textarea {
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+.form form input[type="submit"] {
+    width: 10.6667rem;
+    height: 2.1333rem;
+    margin: 1.3333rem 0 1.3333rem 5.3333rem;
+    background-color: #ffc0cb;
+    color: #fff;
+}

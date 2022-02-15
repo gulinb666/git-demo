@@ -1,0 +1,58 @@
+.main {
+    width: 95%;
+    margin: 1.3333rem 0 0 3%;
+    background-color: #fff;
+}
+.main h2 {
+    padding-top: .5333rem;
+    margin-left: 1.0667rem;
+}
+.main ul li {
+    width: 90%;
+    height: 5.3333rem;
+    margin-left: 5%;
+    margin-top: .4rem;
+    border-bottom: 1px solid #ccc;
+}
+.main ul li img {
+    width: 4.8rem;
+    height: 95%;
+    vertical-align: top;
+}
+.main ul li a {
+    display: inline-block;
+    margin: .2667rem 0 0 .2667rem;
+    color: #000;
+}
+.main ul li span {
+    float: right;
+    margin: 4rem .5333rem 0 0;
+}
+.ui-paging {
+    display: flex;
+    width: 22.4rem;
+    margin-top: .8rem;
+}
+.ui-paging .a,
+.ui-paging .active {
+    width: 2.6667rem;
+    height: 2.6667rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2.6667rem;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.ui-paging .icon {
+    width: 6.4rem;
+}
+.ui-paging .active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.ui-paging .a:hover {
+    background-color: #ddd;
+}
+.none {
+    display: none;
+}

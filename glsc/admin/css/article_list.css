@@ -1,0 +1,35 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main table {
+    width: 100%;
+    margin-top: 10px;
+}
+.main table thead tr th {
+    width: 200px;
+    height: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.main table tbody tr td {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+.main table tbody tr td img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.main table tbody tr td a:hover {
+    color: #ffc0cb;
+}
+.main .class_list {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}

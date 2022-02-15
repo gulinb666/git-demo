@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "phone/classify.html"; //手机
+        }
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+            window.location.href = "ie.html";
+        }
+    </script>
+    <title>顾里商城 - 分类</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/classify.css">
+</head>
+<body>
+    <!-- 顶部导航栏 start -->
+    <div class="header-top">
+        <!-- 顶部导航的左侧导航 -->
+        <div class="left">
+            <a href="login.html">你好，请登录</a>&nbsp;
+            <a href="register.html" style="color: #ffc0cb;">免费注册</a>
+        </div>
+        <!-- 顶部导航的右侧导航 -->
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="member.html" class="indent">我的订单</a>
+                </li>
+                <li>
+                    <a href="member.html" class="member">个人中心</a>
+                </li>
+                <li id="serVice">
+                    <span>客户服务</span>
+                    <div class="service" id="service">
+                        <h3 style="text-align: center;">客户服务</h3>
+                        <a href="" style="display: inline-block;margin-top: 5px;margin-left: 5px;margin-bottom: 5px;">服务</a>
+                    </div>
+                </li>
+                <li id="Phone">
+                    <span>手机商城</span>
+                    <div class="phone" id="phone">
+                        <h3 style="margin-bottom: 10px;text-align: center;">手机商城</h3>
+                    </div>
+                </li>
+                <li id="navigAtion">
+                    <span>网站导航</span>
+                    <div class="navigation" id="navigation">
+                        <h3 style="margin-bottom: 10px;text-align: center;">网站导航</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部导航栏 end -->
+    <!-- 头部 start -->
+    <div class="header">
+        <div class="logo">
+            <h1 style="margin-left: -9999px;">顾里商城</h1>
+            <a href="index.html" title="顾里商城"></a>
+        </div>
+        <!-- 搜索框 start -->
+        <div class="search">
+            <form action="search.html">
+                <input type="text" class="search_inp" name="search" placeholder="黑丝">
+                <input type="submit" class="search_btn" value="&#xe82e;">
+            </form>
+        </div>
+        <!-- 搜索框 end -->
+        <!-- 搜索框下面的活动 start -->
+        <div class="activity">
+            <ul class="activity_module">
+                <li>
+                    <a href="#" style="color: #ffc0cb;" title="满199减99元">满199减99元</a>
+                </li>
+                <li>
+                    <a href="#" title="0元购">限时0元抢</a>
+                </li>
+                <li>
+                    <a href="#" title="超低价秒杀">低价秒杀</a>
+                </li>
+                <li>
+                    <a href="#" title="领取优惠券">优惠券</a>
+                </li>
+                <li>
+                    <a href="#" title="热卖新品">爆款新品</a>
+                </li>
+                <li>
+                    <a href="#" title="新年大促">新年大促</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 搜索框下面的活动 end -->
+        <!-- 购物车 start -->
+        <div class="shop_car" id="shop_car">
+            <i class="shop_car_icon">&#xe64d;</i>
+            <span class="text">购物车</span>
+            <p class="count_shop_car">
+                <i style="position: relative;top: -16px;">0</i>
+            </p>
+        </div>
+        <!-- 购物车 end -->
+        <!-- 分类 start -->
+        <div class="classify">
+            <ul>
+                <li>
+                    <a href="#" title="女装" style="color: #ffc0cb;">女装</a>
+                </li>
+                <li>
+                    <a href="#" title="男装">男装</a>
+                </li>
+                <li>
+                    <a href="#" title="家电">家电</a>
+                </li>
+                <li>
+                    <a href="#" title="电脑">电脑</a>
+                </li>
+                <li>
+                    <a href="#" title="数码">数码</a>
+                </li>
+                <li>
+                    <a href="#" title="母婴">母婴</a>
+                </li>
+                <li id="more">
+                    <a href="javascript:;">更多分类</a>
+                    <div class="classify_more" id="classify_more">
+                        <h3 style="margin-top: 10px;text-align: center;">分类</h3>
+                        <a href="" style="margin-left: 10px;">测试分类</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 分类 end -->
+    </div>
+    <!-- 头部 end -->
+    <!-- 主体 start -->
+    <div class="main">
+        <!-- 商品 start -->
+        <div class="commodity_all">
+            <ul class="commodity">
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+                <a href="commodity_details.html">
+                    <li class="clearfix">
+                        <div class="commodity_upload">
+                            <img src="upload/2022103_1.webp" alt="">
+                        </div>
+                        <h3>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h3>
+                        <span class="price">￥<i>413</i>.00元</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <!-- 商品 end -->
+    </div>
+    <!-- 主体 end -->
+    <!-- 底部 start -->
+    <div class="footer">
+        <a href="">关于我们 |</a>
+        <a href="">联系我们 |</a>
+        <a href="">联系客服 |</a>
+        <a href="">友情链接 |</a>
+        <a href="">手机商城 |</a>
+        <a href="">隐私政策 |</a>
+        <a href="">免责声明</a>
+        <p style="margin-top: 5px;color: #666;">copyright: © 2022-2044 顾里商城ggsch.cn 版权所有</p>
+    </div>
+    <!-- 底部 end -->
+    <script src="js/jQuery.mini.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+</body>
+</html>

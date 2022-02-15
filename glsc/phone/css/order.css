@@ -1,0 +1,68 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 3.7333rem;
+    background-color: #fff;
+}
+.header span {
+    flex: 1;
+    text-align: center;
+    line-height: 3.7333rem;
+}
+.pink_header {
+    color: #ffc0cb !important;
+    border-bottom: 3px solid #ffc0cb !important;
+}
+.indentReceipt {
+    width: 100%;
+    height: 100%;
+}
+.indentReceipt .indentReceipt-none {
+    display: none;
+    margin: 55% 0 0 5%;
+    text-align: center;
+}
+.indentReceipt .indentReceipt-none a {
+    display: inline-block;
+    width: 5.3333rem;
+    height: 1.6rem;
+    margin-top: 5%;
+    border-radius: .8rem;
+    background: -webkit-linear-gradient(left,#40e0d0,#ff8c00,#ff0080);
+    line-height: 1.6rem;
+    color: #fff;
+}
+.indentReceipt ul li:first-child {
+    margin-top: 20%;
+}
+.indentReceipt ul li {
+    width: 90%;
+    margin: 5% 0 0 5%;
+    border-radius: .4rem;
+    background-color: #fff;
+}
+.indentReceipt ul li img {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin: 3%;
+    vertical-align: top;
+}
+.indentReceipt ul li .title {
+    overflow: hidden;
+    display: inline-block;
+    width: 11.7333rem;
+    margin-top: 4%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.indentReceipt ul li p .examine {
+    display: inline-block;
+    width: 4.2667rem;
+    height: 1.6rem;
+    margin: 0 0 5% 3%;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 1.6rem;
+}

@@ -1,0 +1,40 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.main form input {
+    margin-left: 30px;
+}
+.main form .modifying,
+.main .home {
+    width: 80px;
+    height: 40px;
+    background-color: #ffc0cb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main .home {
+    display: inline-block;
+    margin: 0 0 20px 30px;
+    text-align: center;
+    line-height: 40px;
+}
+.main .right {
+    float: right;
+    width: 555px;
+    height: 100%;
+    margin-top: -8%;
+    border-left: 1px solid #ffc0cb;
+}
+.main form input[type="submit"]:hover,
+.main .home:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,87 @@
+.main {
+    position: relative;
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.main form input {
+    margin-left: 30px;
+}
+.main form .modifying,
+.main .home,
+.main input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background-color: #ffc0cb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main form .modifying:hover,
+.main .home:hover,
+.main input[type="submit"]:hover {
+    opacity: 0.9;
+}
+.main .home {
+    display: inline-block;
+    margin: 0 0 20px 30px;
+    text-align: center;
+    line-height: 40px;
+}
+.main input[type="submit"] {
+    margin: 0 0 20px 30px;
+}
+.main .right {
+    position: absolute;
+    top: 58.6%;
+    right: 0;
+    width: 555px;
+    height: 150px;
+    margin-top: -32%;
+    border-left: 1px solid #ffc0cb;
+}
+.main form {
+    position: relative;
+}
+.main form .file {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 30px 0 0 30px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.main form .file input[type="file"] {
+    position: absolute;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99999;
+}
+.main form .file .upload {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main form .upload-img {
+    display: none;
+    position: absolute;
+    top: -9px;
+    left: 31px;
+    width: 148px;
+    height: 148px;
+    border-radius: 0;
+    cursor: pointer;
+}

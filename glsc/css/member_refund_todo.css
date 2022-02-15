@@ -1,0 +1,183 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+}
+.main .refund {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.main .refund form p {
+    display: inline-block;
+    margin: 10px 0 10px 5px;
+    font-size: 16px;
+    vertical-align: top;
+}
+.main .refund form .dicks-sporting-goods {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+.main .refund form .dicks-sporting-goods img {
+    width: 100px;
+    height: 100%;
+    vertical-align: top;
+}
+.main .refund form .dicks-sporting-goods .title {
+    overflow: hidden;
+    display: inline-block;
+    width: 880px;
+    height: 35px;
+    margin-left: 10px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.main .refund form .dicks-sporting-goods .title:hover {
+    color: #ffc0cb;
+}
+.main .refund form .dicks-sporting-goods .Specifications,
+.main .refund form .dicks-sporting-goods .price {
+    position: absolute;
+    left: 113px;
+}
+.main .refund form .dicks-sporting-goods .Specifications {
+    top: 35px;
+}
+.main .refund form .dicks-sporting-goods .price {
+    top: 55px;
+}
+.main .refund form .dicks-sporting-goods .price i {
+    color: #ff0000;
+    font-size: 14px;
+}
+.main .refund form .radio {
+    width: 80px;
+    height: 40px;
+    margin: -25px 0 0 98px;
+}
+.main .refund form .radio .refund_first,
+.main .refund form .radio .refund_last,
+.main .refund form .radio .goods_first,
+.main .refund form .radio .goods_last {
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+}
+.main .refund form .radio #refund_first,
+.main .refund form .radio #refund_last,
+.main .refund form .radio #goods_first,
+.main .refund form .radio #goods_last {
+    vertical-align: top;
+}
+.main .refund form .radio label span {
+    display: inline-block;
+    margin: -2px 0 0 5px;
+}
+.main .refund form .select {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin-top: 8px;
+    margin: -33px 0 0 97px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main .refund form .select .text {
+    margin-left: 5px;
+    color: #666;
+    line-height: 30px;
+}
+.main .refund form .select .icon {
+    float: right;
+    margin-right: 5px;
+    font-family: 'icomoon';
+    font-size: 18px;
+    line-height: 30px;
+}
+.main .refund form .money {
+    width: 175px;
+    height: 30px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main .refund form .money[value] {
+    padding-left: 8px;
+    color: #ff0000;
+}
+.main .refund form .origami-instructions {
+    width: 666px;
+    height: 160px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main .refund form .origami-instructions[placeholder] {
+    padding: 10px 0 0 10px;
+}
+.main .refund .btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0 20px 300px;
+    background-color: #ffc0cb;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main .refund .btn:hover {
+    opacity: 0.9;
+}
+.main .refund form .space {
+    position: absolute;
+    bottom: 8px;
+    right: 260px;
+    color: #999;
+}
+.main .refund_why {
+    position: absolute;
+    top: 290px;
+    left: 97px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-radius: 5px;
+}
+.main .refund_why li {
+    display: none;
+    width: 198px;
+    height: 40px;
+    padding-left: 5px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+}
+.main .refund_why li:hover {
+    background-color: #ffc0cb;
+    color: #fff;
+}
+.main .refund form .upload {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    border: 1px solid #ccc;
+    margin-left: 80px;
+}
+.main .refund form .upload .upload-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: 3;
+}
+.main .refund form .upload .uploading {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    line-height: 150px;
+    font-size: 40px;
+}

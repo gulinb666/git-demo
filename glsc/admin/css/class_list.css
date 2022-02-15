@@ -1,0 +1,61 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main table {
+    width: 100%;
+    margin-top: 10px;
+}
+.main table thead tr th {
+    width: 200px;
+    height: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.main table tbody tr td {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+.main table tbody tr td a:hover {
+    color: #ffc0cb;
+}
+.main .class_list {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .ui-paging {
+    width: 450px;
+    margin-top: 10px;
+}
+.main .ui-paging .a,
+.main .ui-paging .active {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.main .ui-paging .icon {
+    width: 60px;
+}
+.main .ui-paging .a:hover {
+    background-color: #ddd;
+}
+.main .ui-paging .active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.main .ui-paging .active:hover {
+    opacity: 0.8;
+}
+.forbid {
+    color: #999 !important;
+    cursor: not-allowed !important;
+}

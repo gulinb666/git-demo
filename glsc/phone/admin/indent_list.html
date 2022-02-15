@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script>
+        if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "../../admin/indent_list.html"; //电脑
+        }
+    </script>
+    <title>顾里商城 - 订单列表</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/class-list.css">
+</head>
+<body>
+    <!-- 顶部 start -->
+    <header class="header">
+        <span style="margin-left: 2.6667rem;">系统后台</span>
+        <span style="margin-left: 5.3333rem;">管理员：<i>admin</i> | <a href="">退出</a></span>
+    </header>
+    <!-- 顶部 end -->
+    <!-- 顶部下拉菜单横线按钮 start -->
+    <div class="menu-btn">
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
+    </div>
+    <!-- 顶部下拉菜单横线按钮 end -->
+    <!-- 顶部下拉菜单 start -->
+    <div class="select-menu">
+        <ul class="ul-box">
+            <li class="li-box">
+                <span>数据中心</span>
+                <div class="select">
+                    <p>
+                        <a href="index.html">数据统计</a>
+                    </p>
+                    <p>
+                        <a href="javascript:;" onclick="pop('功能开发中，敬请期待！','#0000ff',true);">销量排行</a>
+                    </p>
+                </div>
+            </li>
+            <li class="li-box">
+                <span>商品管理</span>
+                <div class="select">
+                    <p>
+                        <a href="goods-list.html">商品列表</a>
+                    </p>
+                    <p>
+                        <a href="add-goods.html">添加商品</a>
+                    </p>
+                    <p>
+                        <a href="class-list.html">分类列表</a>
+                    </p>
+                    <p>
+                        <a href="addable.html">添加分类</a>
+                    </p>
+                </div>
+            </li>
+            <li class="li-box highlight">
+                <span>订单管理</span>
+                <div class="select">
+                    <p>
+                        <a href="indent_list.html" class="highlight">订单列表</a>
+                    </p>
+                </div>
+            </li>
+            <li class="li-box">
+                <span>用户管理</span>
+                <div class="select">
+                    <p>
+                        <a href="user_list.html">用户列表</a>
+                    </p>
+                    <p>
+                        <a href="add_user.html">添加用户</a>
+                    </p>
+                </div>
+            </li>
+            <li class="li-box">
+                <span>文章管理</span>
+                <div class="select">
+                    <p>
+                        <a href="article_list.html">文章列表</a>
+                    </p>
+                    <p>
+                        <a href="add_published.html">发布文章</a>
+                    </p>
+                </div>
+            </li>
+            <li class="li-box">
+                <span>站点设置</span>
+                <div class="select">
+                    <p>
+                        <a href="web_set.html">网站设置</a>
+                    </p>
+                    <p>
+                        <a href="version.html">版本管理</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 顶部下拉菜单 end -->
+    <!-- 顶部标题 start -->
+    <div class="header-title">
+        <p>订单列表</p>
+    </div>
+    <!-- 顶部标题 end -->
+    <!-- 商品列表表格 start -->
+    <table>
+        <thead>
+            <tr>
+                <th>订单ID</th>
+                <th>商品名称</th>
+                <th>下单信息</th>
+                <th>份数</th>
+                <th>支付金额</th>
+                <th>购买用户</th>
+                <th>订单状态</th>
+                <th>退款信息</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>测试商品</td>
+                <td>
+                    收货人姓名：张三
+                    <br />
+                    联系电话：16753210094
+                    <br />
+                    收货地址：北京市巴拉巴拉
+                    <br />
+                    详细地址：巴拉巴拉
+                    <br />
+                    备注：巴拉巴拉</td>
+                </td>
+                <td>10</td>
+                <td>￥259.00</td>
+                <td>[id: 1000] 老八</td>
+                <td>未支付</td>
+                <td>用户暂时没有申请退款</td>
+                <td>
+                    <a href="">[修改为已完成]</a>
+                    <br />
+                    <a href="">[修改为待处理]</a>
+                    <br />
+                    <a href="">[修改为处理中]</a>
+                    <br />
+                    <a href="">[修改为已退款]</a>
+                    <br />
+                    <a href="">[修改为异常中]</a>
+                    <br />
+                    <a href="">[修改为已评价]</a>
+                    <br />
+                    <a href="">[修改为售后中]</a>
+                    <br />
+                    <a href="">[编辑]</a>
+                    <br />
+                    <a href="">[删除]</a>
+                </td>
+            </tr>
+            <tr id="hide" style="display: none;">
+                <td style="font-size: 14px;">暂时还没有订单哦，赶紧去添加一个吧~</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 商品列表表格 end -->
+    <!-- 分页 start -->
+    <div class="ui-paging">
+        <a href="javascript:;" class="a icon forbid">上一页</a>
+        <a href="javascript:;" class="active">1</a>
+        <a href="javascript:;" class="a">2</a>
+        <a href="javascript:;" class="a">...</a>
+        <a href="javascript:;" class="a">7</a>
+        <a href="javascript:;" class="a">8</a>
+        <a href="javascript:;" class="a icon">下一页</a>
+    </div>
+    <!-- 分页 end -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        i {
+            font-style: normal;
+        }
+        button {
+            outline: none;
+            border: none;
+            background-color: #fff;
+        }
+        .shade {
+            display: none;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.15);
+        }
+        .shade .confirm {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 21.3333rem;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+        }
+        .shade .confirm .title {
+            margin: 1.3333rem 0 0 1.2rem;
+            font-size: 20px;
+        }
+        .shade .confirm .whether {
+            display: inline-block;
+            margin: 1.0667rem 1.0667rem 0 2.6667rem;
+            color: #FFD700;
+        }
+        .shade .confirm .error,
+        .shade .confirm .success {
+            float: right;
+            width: 4.2667rem;
+            height: 2.1333rem;
+            margin: 1.0667rem 0;
+            border: 1px solid #ccc;
+            border-radius: .4rem;
+            cursor: pointer;
+        }
+        .shade .confirm .error {
+            margin-right: .5333rem;
+            transition: all 0.2s;
+        }
+        .shade .confirm .success {
+            margin-right: 1.0667rem;
+            border: 1px solid #409eff;
+            background-color: #409eff;
+            color: #fff;
+        }
+        .shade .confirm .error:hover {
+            border: 1px solid #409eff;
+        }
+    </style>
+    <!-- 提示框 start -->
+    <!-- 遮罩层 start -->
+    <div class="shade" id="box">
+        <!-- 提示框信息 start -->
+        <div class="confirm">
+            <p class="title">提示信息</p>
+            <span class="whether" id="con"></span>
+            <br />
+            <button class="success">我知道啦</button>
+        </div>
+        <!-- 提示框信息 end -->
+    </div>
+    <!-- 遮罩层 end -->
+    <!-- 提示框 end -->
+    <script src="../../js/jQuery.mini.js" type="text/javascript"></script>
+    <script src="../../js/Flibrary.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+</body>
+</html>

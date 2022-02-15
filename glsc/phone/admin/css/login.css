@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background: -webkit-linear-gradient(top left,#673AB7,#512DA8);
+}
+input {
+    outline: none;
+    border: none;
+}
+.login {
+    width: 90%;
+    margin: 8rem 0 0 5%;
+    background-color: #fff;
+}
+.login form span {
+    margin-left: 1.3333rem;
+}
+.login form input[type="text"],
+.login form input[type="password"] {
+    width: 10.6667rem;
+    height: 1.3333rem;
+    border: 1px solid #ccc;
+}
+.login form input[type="submit"] {
+    width: 6.9333rem;
+    height: 1.6rem;
+    margin: 0 0 1.3333rem 6.9333rem;
+    background-color: #ffc0cb;
+    color: #fff;
+}

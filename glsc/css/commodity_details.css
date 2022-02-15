@@ -1,0 +1,365 @@
+/* 给商品详情页的头部设置高度 */
+.header {
+    height: 160px;
+}
+.main {
+    position: relative;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .commodity_img {
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    border: 1px solid #ffc0cb;
+}
+/* 商品小图 */
+.main .small_img {
+    position: relative;
+    width: 360px;
+    height: 80px;
+    margin-top: 20px;
+}
+/* 左右按钮 */
+.main .small_img_left,
+.main .small_img_right {
+    position: absolute;
+    top: 22px;
+    font-family: 'icomoon';
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main .small_img_left {
+    left: 2px;
+}
+.main .small_img_right {
+    right: 2px;
+}
+/* 图片部分 */
+.main .small_img .small_img_main {
+    position: relative;
+    overflow: hidden;
+    width: 304px;
+    height: 80px;
+    margin-top: 13px;
+    margin-left: 24px;
+}
+.main .small_img .small_img_main ul {
+    position: absolute;
+    left: 0;
+    width: 250%;
+}
+.main .small_img .small_img_main ul li {
+    float: left;
+    width: 50px;
+    height: 70px;
+    margin-left: 9px;
+}
+.main .small_img .small_img_main ul li img {
+    width: 100%;
+    height: 100%;
+}
+.small_img_border {
+    border: 1px solid #ffc0cb !important;
+}
+.forbid {
+    color: #ccc !important;
+    cursor:not-allowed !important;
+}
+.main .concern {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    vertical-align: top;
+}
+.main .concern i {
+    font-family: 'iconfont';
+    font-size: 14px;
+}
+.main .concern:hover {
+    color: #ffc0cb;
+}
+.main .main_right_top {
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    width: 600px;
+    height: 500px;
+    margin-left: 100px;
+}
+.main .main_right_top .title {
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    /*弹性盒子模型显示*/
+    display: -webkit-box;
+    /*限制在一个块元素显示的文本行数*/
+    -webkit-line-clamp: 2;
+    /*设置或检索伸缩盒对象的子元素的排列方式*/
+    -webkit-box-orient: vertical;
+}
+.main .main_right_top .price {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: #999;
+}
+.main .main_right_top .price .evaluate {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.main .main_right_top .price .evaluate::after {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 1px;
+    height: 40px;
+    background-color: #ffc0cb;
+    content: '';
+}
+.main .main_right_top .distribution {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.main .main_right_top .distribution .address {
+    position: absolute;
+    top: 9px;
+    left: 60px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ffc0cb;
+    background-color: #fff;
+}
+.main .main_right_top .distribution .address .bottom_icon {
+    float: right;
+    line-height: 18px;
+    font-family: 'icomoon';
+    font-size: 20px;
+    cursor: default;
+}
+.main .main_right_top .specification {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.main .main_right_top .specification .option {
+    display: inline-block;
+    height: 40px;
+    margin: 10px 0 20px 10px;
+    padding: 15px;
+    background-color: #ccc;
+    line-height: 8px;
+    cursor: pointer;
+}
+.main .main_right_top .specification .option:hover {
+    border: 1px solid #ffc0cb;
+}
+.main .main_right_top .number {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    background-color: #fff;
+}
+.main .main_right_top .number[value] {
+    text-align: center;
+}
+.main .main_right_top .plus,
+.main .main_right_top .minus {
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    background-color: #999;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.main .main_right_top .plus {
+    display: block;
+    margin-top: -40px;
+}
+.main .main_right_top .minus {
+    display: block;
+    border-top: 0;
+    line-height: 16px;
+}
+.forbid_minus {
+    background-color: #ccc !important;
+    cursor:not-allowed !important;
+}
+.main .main_right_top .orders,
+.main .main_right_top .add_shop_car {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #ffc0cb;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.main .main_right_top .orders:hover,
+.main .main_right_top .add_shop_car:hover {
+    opacity: 0.9;
+}
+.main .particulars {
+    width: 100%;
+    margin-top: 20px;
+}
+.main .particulars_tab {
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid #ffc0cb;
+    background-color: #999;
+}
+.main .particulars_tab li {
+    float: left;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.particulars_tab_pink {
+    background-color: #ffc0cb !important;
+    color: #fff !important;
+}
+.main .particulars .introduce {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+.main .particulars .introduce p {
+    margin: 10px 0;
+}
+.main .particulars .introduce_commodity {
+    margin-bottom: 50px;
+}
+.main .particulars .evaluate {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #ccc;
+}
+.main .particulars .evaluate_commodity {
+    width: 100%;
+    border-bottom: 1px dashed #ccc;
+}
+.main .particulars .evaluate_commodity .user_img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.main .particulars .evaluate_commodity .count_star {
+    margin-left: 100px;
+    font-family: 'iconfont';
+    font-size: 18px;
+    color: #ffff00;
+}
+.main .particulars .evaluate_commodity .evaluate_content {
+    margin-left: 225px;
+    margin-top: -20px;
+}
+.main .particulars .evaluate_commodity .user_evaluate_img {
+    width: 60px;
+    height: 100px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.first {
+    margin-left: 225px !important;
+}
+.main .particulars .evaluate_commodity .times {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.main .particulars .evaluate_commodity .times .right_function {
+    float: right;
+    width: 100px;
+}
+.main .particulars .evaluate_commodity .times .right_function a,
+.main .particulars .evaluate_commodity .times .right_function span {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.main .particulars .evaluate_commodity .times .right_function span {
+    font-family: 'iconfont';
+    font-size: 16px;
+    cursor: pointer;
+}
+.main .particulars .evaluate_commodity .times .right_function a:hover,
+.main .particulars .evaluate_commodity .times .right_function span:hover {
+    color: #ffc0cb;
+}
+/* 选择地址下拉菜单样式 start */
+.select_address {
+    display: none;
+    position: absolute;
+    top: 369px;
+    left: 568px;
+    width: 400px;
+    background-color: #fff;
+    z-index: 999;
+}
+.select_address .province_box,
+.select_address .city_box,
+.select_address .street_box {
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    margin-top: 10px;
+}
+.select_address .province_box {
+    margin-left: 2px;
+}
+.select_address .city_box,
+.select_address .street_box {
+    margin-left: 10px;
+}
+.select_address .province_box .province,
+.select_address .city_box .city,
+.select_address .street_box .street {
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.select_address .province_minute {
+    width: 100%;
+}
+.select_address .province_minute ul li {
+    float: left;
+    margin: 20px;
+}
+.pink {
+    color: #ffc0cb !important;
+}
+.select_address .province_box .province:hover,
+.select_address .city_box .city:hover,
+.select_address .street_box .street:hover {
+    color: #ffc0cb;
+}
+.select_address .province_minute ul li a:hover {
+    color: #ffc0cb;
+}
+/* 选择地址下拉菜单样式 end */

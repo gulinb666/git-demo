@@ -1,0 +1,43 @@
+/* 数据中心的数据 start */
+.data {
+    width: 100%;
+    margin-top: 1.6rem;
+    margin-left: 1.3333rem;
+}
+.data ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.data ul li {
+    width: 5.3333rem;
+    height: 5.3333rem;
+    margin: 1.3333rem 0 0 1.3333rem;
+    background-color: #fff;
+}
+.data ul li p {
+    text-align: center;
+    margin-top: 1.3333rem;
+}
+/* 数据中心的数据 end */
+.version {
+    width: 90%;
+    height: 10.6667rem;
+    margin: 2.1333rem 0 0 5%;
+    padding-top: 1.3333rem;
+    background-color: #fff;
+}
+.version p {
+    margin-top: .8rem;
+    text-align: center;
+    font-size: 16px;
+}
+.version a {
+    display: block;
+    width: 10.6667rem;
+    height: 2.6667rem;
+    margin: 1.3333rem 0 0 5.8667rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2.6667rem;
+}

@@ -1,0 +1,35 @@
+.refund-state {
+    position: relative;
+    width: 90%;
+    margin: 10% 0 0 5%;
+    border-radius: .5333rem;
+    background-color: #fff;
+}
+.refund-state input[type="text"] {
+    background-color: #fff;
+    color: #ff0000;
+}
+.refund-state textarea {
+    border: 1px solid #ccc;
+    border-radius: .8rem;
+    vertical-align: middle;
+}
+.refund-state textarea[placeholder] {
+    padding: 1.3333rem 0 0 .8rem;
+}
+.btn {
+    width: 90%;
+    height: 2.6667rem;
+    margin: 5% 0 5% 5%;
+    border-radius: 1.2rem;
+    background: -webkit-linear-gradient(left,#ee9ca7,#ffdde1);
+    color: #fff;
+    text-align: center;
+    line-height: 2.6667rem;
+}
+.refund-state form .number_words {
+    position: absolute;
+    bottom: 4.5333rem;
+    right: 3.2rem;
+    color: #999;
+}

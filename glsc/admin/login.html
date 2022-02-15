@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "../phone/admin/login.html"; //手机
+        }
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+            window.location.href = "../ie.html";
+        }
+    </script>
+    <title>顾里商城 - 后台登录</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="main">
+        <h2 style="text-align: center;">管理员登录</h2>
+        <form method="POST">
+            管理员名称：<input type="text" placeholder="请输入管理员名称">
+            <br />
+            <br />
+            管理员密码：<input type="password" placeholder="请输入密码">
+            <br />
+            <br />
+            <input style="margin: 20px 0 0 50px;border: none;background-color: #ffc0cb;color: #fff;font-size: 16px;cursor: pointer;" type="submit" value="登录">
+        </form>
+    </div>
+</body>
+</html>
