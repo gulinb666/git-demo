@@ -1,4 +1,4 @@
-/*
+﻿/*
 * 函数说明：
 *     计算总价格的函数
 *     第一个参数为单价
@@ -124,7 +124,7 @@ function min_us(value) {
 * 如果不是限制的这些后缀名，则会返回 false 否则返回 true
 */
 function uploadImg(user_img) {
-    const patt = /jp?g|png|webp|gif/g;   // 正则表达式 匹配里面的包含的字符
+    const patt = /jpg|jpeg|png|webp|gif/g;   // 正则表达式 匹配里面的包含的字符
     //  如果找不到正则表达式中的对应字符 则返回 false 否则返回 true
     if (!patt.test(user_img.src)) {
         return false;
@@ -139,7 +139,7 @@ function uploadImg(user_img) {
 * 如果不是限制的这些后缀名，则会返回 false 否则返回 true
 */
 function uploadImgAll(user_img_all) {
-    const patt = /jpe?g|png|webp|gif/g;
+    const patt = /jpg|jpeg|png|webp|gif/g;
     for (let i = 0; i < user_img_all.length; i++) {
         if (!patt.test(user_img_all[i].src)) {
             return false;
