@@ -1,0 +1,127 @@
+.title {
+    width: 100%;
+    height: 2.6667rem;
+    background-color: #fff;
+}
+.title .left {
+    margin-left: 20px;
+    line-height: 2.6667rem;
+    font-size: 16px;
+}
+.title .indent-title {
+    margin-left: 28%;
+    font-size: 16px;
+}
+.address,
+.goods,
+.pay {
+    width: 90%;
+    margin: 1% 0 0 5%;
+    border: 1px solid #ccc;
+}
+.address span {
+    display: inline-block;
+    margin: 3%;
+}
+.goods ul li {
+    margin: 3%;
+    border-bottom: 1px solid #ccc;
+}
+.goods ul li i {
+    display: inline-block;
+    margin-bottom: 5%;
+}
+.pay ul a li {
+    width: 100%;
+    height: 2.1333rem;
+    padding-left: 5%;
+    border-bottom: 1px solid #ccc;
+    line-height: 2.1333rem;
+}
+.pay ul a:last-child li {
+    border-bottom: none;
+}
+.pay ul a:last-child li:hover {
+    border-bottom: none;
+}
+.pay ul a:hover li {
+    border-bottom: 1px solid #ffc0cb;
+}
+.pay ul a li:hover {
+    color: #ffc0cb;
+}
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+.mask .add-address {
+    width: 90%;
+    height: 80%;
+    margin: 20% 0 0 5%;
+    background-color: #fff;
+}
+.mask .add-address .address-title {
+    width: 100%;
+    height: 3.2rem;
+    padding: 6% 0 0 5%;
+    background-color: #999;
+}
+.mask .add-address form span {
+    display: inline-block;
+    margin: 2% 0 0 5%;
+}
+.mask .add-address form input {
+    height: 1.6rem;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+}
+.mask .add-address #save {
+    width: 90%;
+    height: 3.2rem;
+    margin-left: 5%;
+    background-color: #ffc0cb;
+    color: #fff;
+    text-align: center;
+    line-height: 3.2rem;
+}
+.mask .add-address form .selected {
+    display: inline-block;
+    width: 8rem;
+    height: 1.6rem;
+    padding: 2% 0 0 10%;
+    border: 1px solid #ccc;
+    color: #999;
+}
+.select_address {
+    display: none;
+    position: absolute;
+    top: 32.3%;
+    left: 10%;
+    width: 80%;
+    background-color: #000;
+}
+.select_address span {
+    display: inline-block;
+    margin: 5%;
+    color: #fff;
+}
+.select_address ul li {
+    float: left;
+    margin: 3%;
+    color: #fff;
+}
+.pink {
+    color: #ffc0cb !important;
+}
+.close {
+    display: none;
+    position: absolute;
+    top: 13%;
+    right: 8%;
+    font-size: 18px;
+}

@@ -1,0 +1,16 @@
+table {
+    width: 90%;
+    margin: 10% 0 0 5%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+table thead tr {
+    background-color: #205876;
+}
+table thead tr th {
+    width: 8rem;
+    height: 4rem;
+}
+table tbody tr td {
+    border: 1px solid #ccc;
+}

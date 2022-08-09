@@ -1,0 +1,82 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    border: 1px solid #ccc;
+}
+.main .dicks-sporting-goods {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+.main .dicks-sporting-goods img {
+    width: 100px;
+    height: 100%;
+    vertical-align: top;
+}
+.main .dicks-sporting-goods .title {
+    overflow: hidden;
+    display: inline-block;
+    width: 880px;
+    height: 35px;
+    margin-left: 10px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.main .dicks-sporting-goods .title:hover {
+    color: #ffc0cb;
+}
+.main .dicks-sporting-goods .Specifications,
+.main .dicks-sporting-goods .price {
+    position: absolute;
+    left: 113px;
+}
+.main .dicks-sporting-goods .Specifications {
+    top: 35px;
+}
+.main .dicks-sporting-goods .price {
+    top: 55px;
+}
+.main .dicks-sporting-goods .price i {
+    color: #ff0000;
+    font-size: 14px;
+}
+.main .refund {
+    width: 900px;
+    height: 190px;
+    margin: 40px 0 0 45px;
+    border-top: 1px solid #ccc;
+}
+.main .refund .refund-type-signature {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.main .refund .refund-type-signature p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.main .refund .refund-type-signature .refund-type {
+    display: inline-block;
+    width: 360px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 80px;
+}
+.main .refund .refund-type-signature .refund-type:nth-child(3) {
+    margin-left: 170px;
+}
+.main .refund .refund-type-signature .refund-type span {
+    color: #000;
+    font-size: 18px;
+}
+.main .refund .refund-type-signature .refund-type div {
+    margin-top: -15px;
+    line-height: 0;
+}
+.main .refund .refund-type-signature .refund-type:hover {
+    border: 1px solid #ffc0cb;
+}

@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "phone/indent.html"; //手机
+        }
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+            window.location.href = "ie.html";
+        }
+    </script>
+    <title>顾里商城 - 结算</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/indent.css">
+</head>
+<body>
+    <!-- 顶部导航栏 start -->
+    <div class="header-top">
+        <!-- 顶部导航的左侧导航 -->
+        <div class="left">
+            <a href="login.html">你好，请登录</a>&nbsp;
+            <a href="register.html" style="color: #ffc0cb;">免费注册</a>
+        </div>
+        <!-- 顶部导航的右侧导航 -->
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="member.html" class="indent">我的订单</a>
+                </li>
+                <li>
+                    <a href="member.html" class="member">个人中心</a>
+                </li>
+                <li id="serVice">
+                    <span>客户服务</span>
+                    <div class="service" id="service">
+                        <h3 style="text-align: center;">客户服务</h3>
+                        <a href="" style="display: inline-block;margin-top: 5px;margin-left: 5px;margin-bottom: 5px;">服务</a>
+                    </div>
+                </li>
+                <li id="Phone">
+                    <span>手机商城</span>
+                    <div class="phone" id="phone">
+                        <h3 style="margin-bottom: 10px;text-align: center;">手机商城</h3>
+                    </div>
+                </li>
+                <li id="navigAtion">
+                    <span>网站导航</span>
+                    <div class="navigation" id="navigation">
+                        <h3 style="margin-bottom: 10px;text-align: center;">网站导航</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部导航栏 end -->
+    <!-- 头部 start -->
+    <div class="header">
+        <div class="logo">
+            <h1 style="margin-left: -9999px;">顾里商城</h1>
+            <a href="index.html" title="顾里商城"></a>
+        </div>
+    </div>
+    <!-- 主体 start -->
+    <div class="main">
+        <h2 style="margin: 10px 0 10px 100px;">请确认订单信息</h2>
+        <div class="indent">
+            <!-- 收货地址 start -->
+            <div class="address">
+                <span style="display: inline-block;margin: 10px 0;">收货地址：<i id="first_address">暂无收货地址，您可以点击右边的新增收货地址来新建一个默认收货地址哦~</i></span>
+                <a href="javascript:;" class="add_address" id="add_address">新增收货地址</a>
+            </div>
+            <!-- 收货地址 end -->
+            <!-- 用户选择的商品订单 start -->
+            <div class="commodity_details">
+                <span style="display: inline-block;margin-bottom: 10px;font-weight: bold;">您选择的所有商品</span>
+                <ul>
+                    <li>
+                        <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                        <a href="commodity_details.html" class="title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                        <div class="subtotal">￥ 413.00</div>
+                        <div class="copies">× 1</div>
+                    </li>
+                    <li>
+                        <img src="upload/20220104_1.jpg" alt="" class="commodity_img">
+                        <a href="commodity_details.html" class="title">AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</a>
+                        <div class="subtotal">￥ 413.00</div>
+                        <div class="copies">× 2</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 用户选择的商品订单 end -->
+            <!-- 支付方式 start -->
+            <div class="pay">
+                <span>支付方式：</span>
+                <a href="javascript:;" class="pays">
+                    <img src="images/qq_pay.jpg" alt="">
+                    QQ支付
+                </a>
+                <a href="javascript:;" class="pays">
+                    <img src="images/wx_pay.jpg" alt="">
+                    微信支付
+                </a>
+                <a href="javascript:;" class="pays">
+                    <img src="images/ali_pay.jpg" alt="">
+                    支付宝支付
+                </a>
+                <a href="javascript:;" class="pays pay_pink">
+                    <img src="images/money.jpg" alt="">
+                    余额支付
+                </a>
+            </div>
+            <!-- 支付方式 end -->
+        </div>
+        <div class="handle_box">
+            <p class="handle">应付：<i style="color: #ff0000;font-size: 20px;" id="show_price"></i></p>
+        </div>
+        <a href="" class="go_pay">立即支付</a>
+    </div>
+    <!-- 主体 end -->
+    <!-- 底部 start -->
+    <div class="footer">
+        <a href="">关于我们 |</a>
+        <a href="">联系我们 |</a>
+        <a href="">联系客服 |</a>
+        <a href="">友情链接 |</a>
+        <a href="">手机商城 |</a>
+        <a href="">隐私政策 |</a>
+        <a href="">免责声明</a>
+        <p style="margin-top: 5px;color: #666;">copyright: © 2022-2044 顾里商城ggsch.cn 版权所有</p>
+    </div>
+    <!-- 底部 end -->
+    <!-- 新增收货人 start -->
+    <div class="add_address_fixed_box" id="add_address_box">
+        <div class="add_address_fixed">
+            <div class="add_title">新增收货人信息<a href="javascript:;" style="float: right;margin-right: 20px;" id="close_btn">X</a></div>
+            <form method="POST">
+                <span><i style="color: #ff0000;">*</i> 收货人名称：</span>
+                <input type="text" placeholder="请输入名称" id="userName">
+                <br />
+                <br />
+                <span><i style="color: #ff0000;">*</i> 收货人电话：</span>
+                <input type="text" placeholder="请输入正确的电话号码" id="userPhone">
+                <br />
+                <br />
+                <span><i style="color: #ff0000;">*</i> 请输入所在的地区：</span>
+                <input type="text" placeholder="请输入所在的地区" id="region">
+                <br />
+                <br />
+                <span><i style="color: #ff0000">*</i> 详细地址：</span>
+                <input type="text" placeholder="请输入详细地址" id="address">
+                <br />
+                <br />
+                <span style="margin-left: 32px;">备注：</span>
+                <input type="text" placeholder="填写后商家能看到你的备注哦" id="remark">
+                <p class="save" id="save">保存地址信息</p>
+                </form>
+            </div>
+        </div>
+        <!-- 新增收货人 end -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            i {
+                font-style: normal;
+            }
+            .shade {
+                display: none;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.15);
+            }
+            .shade .confirm {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 450px;
+                background-color: #fff;
+                box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+            }
+            .shade .confirm .title {
+                margin: 10px 0 0 15px;
+                font-size: 20px;
+            }
+            .shade .confirm .whether {
+                display: inline-block;
+                margin: 30px 0 0 70px;
+                color: #FFD700;
+            }
+            .shade .confirm .error,
+            .shade .confirm .success {
+                float: right;
+                width: 80px;
+                height: 40px;
+                margin: 20px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .shade .confirm .error {
+                margin-right: 10px;
+                transition: all 0.2s;
+            }
+            .shade .confirm .success {
+                margin-right: 20px;
+                border: 1px solid #409eff;
+                background-color: #409eff;
+                color: #fff;
+            }
+            .shade .confirm .error:hover {
+                border: 1px solid #409eff;
+            }
+        </style>
+        <!-- 提示信息 start -->
+        <!-- 遮罩层 start -->
+        <div class="shade" id="box">
+            <!-- 提示框信息 start -->
+            <div class="confirm">
+                <p class="title">提示信息</p>
+                <span class="whether" id="con"></span>
+                <br />
+                <button class="success">我知道啦</button>
+            </div>
+            <!-- 提示框信息 end -->
+        </div>
+        <!-- 遮罩层 end -->
+        <!-- 提示信息 end -->
+        <script src="js/jQuery.mini.js" type="text/javascript"></script>
+        <script src="js/Flibrary.js" type="text/javascript"></script>
+        <script src="js/common.js" type="text/javascript"></script>
+        <script src="js/indent.js" type="text/javascript"></script>
+</body>
+</html>

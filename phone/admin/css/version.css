@@ -1,0 +1,22 @@
+.info {
+    width: 90%;
+    margin: 1.3333rem 0 0 5%;
+}
+.info table {
+    width: 100%;
+    margin-bottom: 2.6667rem;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+.info table thead tr th {
+    width: 13.3333rem;
+    height: 2.6667rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.info table tbody tr td {
+    width: 13.3333rem;
+    height: 2.6667rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}

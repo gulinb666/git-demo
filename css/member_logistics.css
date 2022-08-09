@@ -1,0 +1,34 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+}
+.main table {
+    border: 1px solid #ccc;
+}
+.main table tbody tr th {
+    height: 40px;
+    background-color: #205876;
+    color: #fff;
+}
+.main table tbody tr th:first-child {
+    width: 600px;
+}
+.main table tbody tr th:nth-child(2),
+.main table tbody tr th:last-child {
+    width: 100px;
+}
+.main table tbody tr th:nth-child(3) {
+    width: 300px;
+}
+.main table tbody tr th:nth-child(5) {
+    width: 900px;
+}
+.main table tbody tr th:nth-child(6) {
+    width: 190px;
+}
+.main table tbody tr td {
+    border: 1px solid #ccc;
+}
+.main table tbody tr td p {
+    text-align: center;
+}

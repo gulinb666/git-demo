@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script>
+        if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "../login.html"; //电脑
+        }
+    </script>
+    <title>顾里商城 - 会员登录</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login">
+        <h2 style="margin-bottom: 1.3333rem;text-align: center;">会员登录</h2>
+        <form method="POST">
+            <span>用户名：</span><input type="text" placeholder="请输入用户名">
+            <br />
+            <br />
+            <span>密码：</span><input type="password" placeholder="请输入密码">
+            <br />
+            <br />
+            <input type="submit" value="登录">
+        </form>
+    </div>
+</body>
+</html>

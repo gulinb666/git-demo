@@ -1,0 +1,41 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    border: 1px solid #ccc;
+}
+.main .dicks-sporting-goods {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+.main .dicks-sporting-goods img {
+    width: 100px;
+    height: 100%;
+    vertical-align: top;
+}
+.main .dicks-sporting-goods .title {
+    overflow: hidden;
+    display: inline-block;
+    width: 880px;
+    height: 35px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.main .dicks-sporting-goods span {
+    position: absolute;
+    top: 45px;
+    left: 101px;
+}
+.main .dicks-sporting-goods .title:hover {
+    color: #ffc0cb;
+}
+.main .parameter_indent {
+    width: 100%;
+    padding: 20px 0 10px 10px;
+    background-color: #fff;
+}
+.main .parameter_indent ul li span {
+    display: inline-block;
+    margin: 5px;
+}

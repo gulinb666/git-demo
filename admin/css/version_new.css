@@ -1,0 +1,12 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main .version {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.main .version p {
+    margin: 10px 0;
+}

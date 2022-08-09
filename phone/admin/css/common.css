@@ -1,0 +1,103 @@
+/*基础配置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-size: 12px;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+i {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+/* 顶部 start */
+.header {
+    width: 100%;
+    height: 4rem;
+}
+.header span {
+    font-size: 16px;
+    line-height: 4rem;
+}
+/* 顶部 end */
+/* 顶部下拉菜单横线按钮 start */
+.menu-btn {
+    position: absolute;
+    top: 4.5333rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 2.1333rem;
+    height: 1.0667rem;
+    margin-left: 3.2rem;
+}
+.menu-btn span {
+    width: 100%;
+    height: .8rem;
+    border-bottom: 3px solid #000;
+}
+/* 顶部下拉菜单横线按钮 end */
+/* 顶部下拉菜单 start */
+.select-menu {
+    display: none;
+    width: 100%;
+    background: -webkit-linear-gradient(left,#8E2DE2,#4A00E0);
+}
+.select-menu .ul-box {
+    margin-left: 8rem;
+}
+.select-menu .ul-box .li-box {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.5;
+}
+.select-menu .ul-box .li-box span {
+    line-height: 4.2667rem;
+}
+.select-menu .ul-box .li-box:hover {
+    opacity: 1;
+}
+.highlight {
+    opacity: 1 !important;
+}
+.select-menu .ul-box .li-box .select {
+    display: none;
+}
+.select-menu .ul-box .li-box .select p {
+    margin-bottom: 1.3333rem;
+}
+.select-menu .ul-box .li-box .select p a {
+    color: #fff;
+    opacity: 0.3;
+}
+.select-menu .ul-box .li-box .select p a:hover {
+    opacity: 1;
+}
+/* 顶部下拉菜单 end */
+/* 顶部标题 start */
+.header-title p {
+    margin: 1.6533rem 0 0 6.4rem;
+    font-size: 16px;
+}
+/* 顶部标题 end */

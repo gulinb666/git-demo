@@ -1,0 +1,31 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main .info {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.main .info table {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.main .info table tr th {
+    background-color: #568798;
+    color: #fff;
+}
+.main .info table thead tr th {
+    width: 200px;
+    height: 40px;
+}
+.main .info table tbody tr td {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.main .info table tbody tr td a:hover {
+    color: #ffc0cb;
+}

@@ -1,0 +1,13 @@
+.indent-info {
+    width: 90%;
+    margin: 10% 0 5.3333rem 5%;
+    border: 1px solid #ccc;
+}
+.indent-info ul li {
+    width: 90%;
+    margin: 0 0 2% 5%;
+    border-bottom: 1px solid #ccc;
+}
+.indent-info ul li p {
+    margin-bottom: 3%;
+}

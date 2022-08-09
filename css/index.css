@@ -1,0 +1,304 @@
+.main {
+    position: relative;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .main_classify {
+    width: 200px;
+    background-color: #fff;
+}
+.main .main_classify ul li {
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.main .main_classify ul li:last-child {
+    padding-bottom: 5px;
+}
+.main .main_classify ul li:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.main .main_classify ul li a:hover {
+    color: #ffc0cb;
+}
+.classify_left {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 560px;
+    height: 510px;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 999;
+}
+.classify_left .classify_left_title {
+    display: none;
+}
+.classify_left_commodity_box {
+    display: inline-block;
+    width: 130px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: #fff;
+}
+.classify_left_commodity {
+    width: 130px;
+    height: 130px;
+}
+.classify_left_commodity_box .classify_left_commodity img {
+    width: 100%;
+    height: 100%;
+}
+.classify_left_commodity_box .classify_left_commodity p {
+    margin: 5px;
+    /*强制一行显示*/
+    white-space: nowrap;
+    /*溢出部分隐藏*/
+    overflow: hidden;
+    /*溢出部分显示省略号*/
+    text-overflow: ellipsis;
+    color: #000;
+}
+/* 轮播图部分样式 start */
+.main .slide_show {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 210px;
+    width: 550px;
+    height: 510px;
+}
+.main .slide_show ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3000%;
+}
+.main .slide_show ul li {
+    float: left;
+    width: 550px;
+    height: 510px;
+}
+.main .slide_show ul li a img {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+.main .count_btn {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    height: 20px;
+    margin-left: 120px;
+}
+.main .count_btn ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.count_btn_color {
+    border: 2px solid #f5f5f5 !important;
+    background-color: #ffc0cb !important;
+}
+.main .left_btn {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    line-height: 30px;
+}
+.main .left_btn .left::after {
+    margin-left: 2px;
+    content: '\ea51';
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main .right_btn {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    line-height: 30px;
+}
+.main .right_btn .right::after {
+    margin-left: 7px;
+    content: '\ea53';
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main .left_btn,
+.main .right_btn {
+    display: none;
+    background-color: rgba(0,0,0,0.15);
+}
+/* 轮播图样式 end */
+.main .main_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+    height: 510px;
+    background-color: #fff;
+}
+.main .main_right .main_right_top {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.main .main_right .main_right_top .photo {
+    width: 50px;
+    height: 50px;
+}
+.main .main_right .main_right_top .photo a img {
+    width: 100%;
+    height: 100%;
+    margin-top: 22px;
+    margin-left: 22px;
+    border-radius: 50%;
+}
+.main .main_right .main_right_top .user_is_login {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    color: #666;
+}
+.main .main_right .main_right_top .user_login {
+    position: absolute;
+    top: 42px;
+    right: 58px;
+    margin-top: 10px;
+    color: #666;
+}
+.main .main_right .banner {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    background: url("../upload/banner.png") no-repeat;
+    background-size: 100% 100%;
+}
+.main .main_right .news {
+    width: 95%;
+    height: 267px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-top: 1px solid #666;
+}
+.main .main_right .news .news_title {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border-bottom: 1px dashed #666;
+    line-height: 30px;
+}
+.main .main_right .news .news_title .more {
+    position: relative;
+    float: right;
+    margin-right: 12px;
+}
+.main .main_right .news .news_title .more::after {
+    position: absolute;
+    top: 0;
+    content: '\ea53';
+    font-family: 'icomoon';
+}
+.main .main_right .news ul li {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    /*强制一行显示*/
+    white-space: nowrap;
+    /*溢出部分隐藏*/
+    overflow: hidden;
+    /*溢出部分显示省略号*/
+    text-overflow: ellipsis;
+}
+.main .main_right a:hover {
+    color: #ffc0cb;
+}
+.main .main_right .news ul li a:hover {
+    text-decoration: underline;
+}
+.main .commodity {
+    width: 100%;
+    margin-top: 10px;
+}
+.main .commodity li {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin-left: 45px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.main .commodity li .commodity_upload {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+.main .commodity li .commodity_upload img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.main .commodity li h3 {
+    overflow: hidden;
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 12px;
+    /*弹性盒子模型显示*/
+    display: -webkit-box;
+    /*限制在一个块元素显示的文本行数*/
+    -webkit-line-clamp: 2;
+    /*设置或检索伸缩盒对象的子元素的排列方式*/
+    -webkit-box-orient: vertical;
+}
+.main .commodity li .price {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 12px;
+    font-size: 14px;
+    color: #ff0000;
+}
+.main .commodity li .price i {
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .commodity_all {
+    width: 100%;
+}
+.main .commodity_all .commodity li:hover {
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.09);
+}

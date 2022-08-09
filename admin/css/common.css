@@ -1,0 +1,141 @@
+﻿/* 字体图标配置 */
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('../../ali_fonts/iconfont.ttf?t=1640952652061') format('truetype');
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../icon_fonts/fonts/icomoon.eot?kw1b6v');
+    src:  url('../../icon_fonts/fonts/icomoon.eot?kw1b6v#iefix') format('embedded-opentype'),
+      url('../../icon_fonts/fonts/icomoon.ttf?kw1b6v') format('truetype'),
+      url('../../icon_fonts/fonts/icomoon.woff?kw1b6v') format('woff'),
+      url('../../icon_fonts/fonts/icomoon.svg?kw1b6v#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/* 基本配置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f9f9f9;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+input,
+button,
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+}
+i {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+/* 顶部导航栏 start */
+.header_top {
+    width: 800px;
+    height: 40px;
+    margin-left: 200px;
+}
+.header_top a {
+    line-height: 40px;
+}
+.header_top span {
+    float: right;
+    line-height: 40px;
+}
+.header_top span,
+.header_top a {
+    font-size: 17px;
+}
+.header_top span a:hover {
+    color: #ffc0cb;
+}
+/* 顶部导航栏 end */
+/* 头部 start */
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+}
+.header ul .li {
+    float: left;
+    width: 100px;
+    height: 60px;
+    margin-right: 75px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.header ul .li .icon {
+    margin-right: 5px;
+    font-family: 'iconfont';
+    font-size: 16px;
+}
+.header ul .li::after {
+    content: '\ea50';
+    font-family: 'icomoon';
+    font-size: 16px;
+    vertical-align: middle;
+}
+.header ul .li:first-child {
+    margin-left: 100px;
+}
+.header ul .li:last-child {
+    margin-right: 100px;
+}
+.header ul .li:hover {
+    opacity: 1;
+}
+.Code-Highlighted {
+    opacity: 1 !important;
+}
+/* 头部 end */
+/* 底部 start */
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 100px;
+    border-top: 1px solid #ccc;
+}
+/* 底部 end */
+/* 下拉菜单 start */
+.select_menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    width: 160px;
+    padding-top: 5px;
+    background-color: #fff;
+    z-index: 9999;
+}
+.select_menu ul a li {
+    width: 100%;
+    height: 40px;
+}
+.select_menu ul a li {
+    text-align: center;
+    line-height: 40px;
+}
+.select_menu ul a li:hover {
+    background-color: #f9f9f9;
+}
+.color {
+    background-color: #f3f3f3 !important;
+}
+/* 下拉菜单 end */

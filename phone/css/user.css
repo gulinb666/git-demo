@@ -1,0 +1,29 @@
+.user-info {
+    width: 100%;
+    height: 10.6667rem;
+    background: -webkit-linear-gradient(top left,#000000,#434343);
+}
+.user-info img {
+    width: 8rem;
+    height: 8rem;
+    margin-top: .8rem;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.user-info span {
+    display: inline-block;
+    margin: 2.1333rem 0 0 .5333rem;
+    color: #fff;
+    font-size: 16px;
+}
+.user-function-list {
+    width: 100%;
+    background-color: #fff;
+}
+.user-function-list ul li {
+    width: 100%;
+    height: 2.1333rem;
+    padding-left: .8rem;
+    border-bottom: 1px solid #ccc;
+    line-height: 2.1333rem;
+}

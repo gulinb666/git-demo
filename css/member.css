@@ -1,0 +1,154 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+}
+.main .member_info {
+    width: 100%;
+    height: 80px;
+}
+.main .member_info .member_photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.main .member_info .function {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+.main .member_info .function a:hover {
+    color: #ffc0cb;
+}
+.main .like {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+}
+.main .like::after {
+    content: '\ea53';
+    font-family: 'icomoon';
+    font-size: 16px;
+    vertical-align: middle;
+}
+.main .like:hover {
+    color: #ffc0cb;
+}
+.main .my_indent {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.05);
+}
+.main .my_indent .my_indent_title {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.main .my_indent .my_indent_title .my_indent_title_content {
+    margin-left: 20px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.main .my_indent .indent_function {
+    height: 60px;
+    margin: 50px 0 0 100px;
+}
+.main .my_indent .indent_function ul li {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.main .my_indent .indent_function ul li p {
+    font-family: 'iconfont';
+    font-size: 40px;
+}
+.main .my_indent .indent_function ul li:hover {
+    color: #ffc0cb;
+    background-color: #fff;
+    box-shadow: 3px 5px 3px 3px rgba(0,0,0,0.3);
+}
+.pink_select {
+    color: #ffc0cb !important;
+    background-color: #fff !important;
+    box-shadow: 3px 5px 3px 3px rgba(0,0,0,0.3) !important;
+}
+.main .my_indent .indent_content .hide {
+    display: none;
+}
+.main .my_indent .indent_content {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.main .my_indent .indent_content li {
+    width: 100%;
+    height: 125px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.main .my_indent .indent_content li img {
+    width: 100px;
+    height: 100%;
+    vertical-align: top;
+}
+.main .my_indent .indent_content li a {
+    overflow: hidden;
+    display: inline-block;
+    width: 170px;
+    height: 35px;
+    margin: 10px 0 0 10px;
+    color: #333;
+    vertical-align: top;
+}
+.main .my_indent .indent_content li a:hover {
+    color: #ffc0cb;
+}
+.main .my_indent .indent_content li span {
+    display: inline-block;
+    width: 60px;
+    margin: 10px 0 0 100px;
+}
+.main .my_indent .indent_content li .operate {
+    float: right;
+    width: 360px;
+    height: 100%;
+    border-left: 1px solid #ffc0cb;
+}
+.main .my_indent .indent_content li .operate p {
+    margin-left: 240px;
+}
+.main .my_indent .indent_content li .operate p i {
+    color: #ff0000;
+    font-size: 16px;
+}
+.main .my_indent .indent_content li .operate .operate_li {
+    float: right;
+}
+.main .my_indent .indent_content li .operate .operate_li li {
+    float: left;
+    width: 50px;
+    height: 37px;
+    margin-right: 8px;
+    line-height: 37px;
+}
+.main .my_indent .indent_content li .operate .operate_li li a {
+    margin: 0;
+}
+.main .my_indent .indent_content li .operate .operate_li li a:hover {
+    text-decoration: underline;
+}
+.main .my_indent .indent_content li h3 {
+    text-align: center;
+    font-weight: normal;
+    line-height: 100px;
+}
+.main .my_indent .indent_content li h3::before {
+    margin-right: 10px;
+    content: '\e9b0';
+    color: #135671;
+    font-family: 'icomoon';
+    font-size: 50px;
+    vertical-align: middle;
+}

@@ -1,0 +1,156 @@
+.header .search,
+.header .activity {
+    left: 610px;
+}
+.main {
+    width: 1000px;
+    margin-left: 100px;
+}
+.main .function_all {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: #999;
+    line-height: 35px;
+}
+.main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.main table tr td:nth-child(1) {
+    width: 95px;
+}
+.main table tr td:nth-child(2) {
+    width: 466px;
+}
+.main table tr td:nth-child(3) {
+    width: 142px;
+}
+.main table tr td:nth-child(4) {
+    width: 122px;
+}
+.main table tr td:nth-child(5) {
+    width: 100px;
+}
+.main table tr td input {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+/* .main table tr td {
+    text-align: center;
+} */
+.main .commodity .null {
+    display: none;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+}
+.main .commodity li {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #999;
+}
+.main .commodity li .commodity_select {
+    margin-top: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.main .commodity li .commodity_img {
+    margin: 10px 0 10px 5px;
+}
+.main .commodity li .commodity_title {
+    overflow: hidden;
+    display: inline-block;
+    width: 300px;
+    height: 34px;
+    margin: 10px 0 0 10px;
+    vertical-align: top;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.main .commodity li .unit_price {
+    display: inline-block;
+    margin: 10px 0 0 151px;
+    vertical-align: top;
+}
+.main .commodity li .minus {
+    margin-left: 75px;
+    line-height: 25px;
+}
+.main .commodity li .minus,
+.main .commodity li .plus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #999;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.main .commodity li .number {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -3px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    vertical-align: top;
+}
+.main .commodity li .number[value] {
+    text-align: center;
+}
+.main .commodity li .plus {
+    margin-left: -3px;
+    line-height: 30px;
+}
+.forbid {
+    background-color: #ccc !important;
+    cursor: not-allowed !important;
+}
+.main .commodity li .subtotal {
+    display: inline-block;
+    margin: 10px 0 0 40px;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: top;
+}
+.main .commodity li .operation {
+    float: right;
+    width: 50px;
+    height: 40px;
+    margin: 10px 20px 0 0;
+}
+.main .commodity li .operation li {
+    margin-top: 5px;
+    border: 0;
+}
+.main .commodity li a:hover {
+    color: #ffc0cb;
+}
+.main .submit pre a:hover {
+    color: #ffc0cb;
+    text-decoration: underline;
+}
+.main .submit {
+    background-color: #fff;
+}
+.main .submit .submit_price {
+    float: right;
+    height: 40px;
+    margin-top: -37px;
+}
+.main .submit .submit_price .go_buy {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    margin-top: 2px;
+    background-color: pink;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+}

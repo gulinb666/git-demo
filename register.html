@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "phone/register.html"; //手机
+        }
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+            window.location.href = "ie.html";
+        }
+    </script>
+    <title>顾里商城 - 注册</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- 顶部导航栏 start -->
+    <div class="header-top">
+        <!-- 顶部导航的左侧导航 -->
+        <div class="left">
+            <a href="login.html">你好，请登录</a>&nbsp;
+            <a href="register.html" style="color: #ffc0cb;">免费注册</a>
+        </div>
+        <!-- 顶部导航的右侧导航 -->
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="member.html" class="indent">我的订单</a>
+                </li>
+                <li>
+                    <a href="member.html" class="member">个人中心</a>
+                </li>
+                <li id="serVice">
+                    <span>客户服务</span>
+                    <div class="service" id="service">
+                        <h3 style="text-align: center;">客户服务</h3>
+                        <a href="" style="display: inline-block;margin-top: 5px;margin-left: 5px;margin-bottom: 5px;">服务</a>
+                    </div>
+                </li>
+                <li id="Phone">
+                    <span>手机商城</span>
+                    <div class="phone" id="phone">
+                        <h3 style="margin-bottom: 10px;text-align: center;">手机商城</h3>
+                    </div>
+                </li>
+                <li id="navigAtion">
+                    <span>网站导航</span>
+                    <div class="navigation" id="navigation">
+                        <h3 style="margin-bottom: 10px;text-align: center;">网站导航</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部导航栏 end -->
+    <!-- 头部 start -->
+    <div class="header">
+        <div class="logo">
+            <h1 style="margin-left: -9999px;">顾里商城</h1>
+            <a href="index.html" title="顾里商城"></a>
+        </div>
+    </div>
+    <!-- 头部 end -->
+    <!-- 主体 start -->
+    <div class="main">
+        <div class="register_form">
+            <div class="register_title">
+                <h2>欢迎注册为 <i style="color: #ffc0cb;">顾里商城</i> 会员</h2>
+                <span class="go_login">已有账号？去<a href="login.html" style="color: #ffc0cb;">登录</a></span>
+            </div>
+            <form method="POST" id="form">
+                <span><i style="color: #ff0000;">*</i> 用户名：</span><input type="text" placeholder="请输入用户名(最好输入英文或数字)" id="user_name">
+                <br />
+                <br />
+                <span><i style="color: #ff0000;">*</i> 密码：</span><input type="password" placeholder="请输入密码(6-16位字母加数字加符号)" id="pwd">
+                <br />
+                <br />
+                <span><i style="color: #ff0000;">*</i> 确认密码：</span><input type="password" placeholder="请再输入一次上面的密码" id="pwd2">
+                <br />
+                <br />
+                <span><i style="color: #ff0000;">*</i> 验证码：</span><input type="text" placeholder="请输入4位验证码(不区分大小写)" id="confirm">
+                <input type="button" value="确认注册" class="submit" id="submit">
+            </form>
+            <div class="agree">
+                <input type="checkbox" style="vertical-align: bottom;" id="agree"><span style="display: inline-block;margin-left: 5px;">我已认真阅读并同意<a href="" style="color: #0000ff;">《顾里商城用户协议》</a>及<a href="" style="color: #0000ff;">《顾里商城用户隐私政策》</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 end -->
+    <!-- 底部 start -->
+    <div class="footer">
+        <a href="">关于我们 |</a>
+        <a href="">联系我们 |</a>
+        <a href="">联系客服 |</a>
+        <a href="">友情链接 |</a>
+        <a href="">手机商城 |</a>
+        <a href="">隐私政策 |</a>
+        <a href="">免责声明</a>
+        <p style="margin-top: 5px;color: #666;">copyright: © 2022-2044 顾里商城ggsch.cn 版权所有</p>
+    </div>
+    <!-- 底部 end -->
+    <!-- 密码框显示隐藏按钮 -->
+    <div class="if_hidden" id="if_hidden"></div>
+
+    <!-- 确认框代码 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        i {
+            font-style: normal;
+        }
+        .shade {
+            display: none;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.15);
+        }
+        .shade .confirm {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 450px;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.01);
+        }
+        .shade .confirm .title {
+            margin: 10px 0 0 15px;
+            font-size: 20px;
+        }
+        .shade .confirm .whether {
+            display: inline-block;
+            margin: 30px 70px 0 70px;
+            color: #FFD700;
+        }
+        .shade .confirm .error,
+        .shade .confirm .success {
+            float: right;
+            width: 80px;
+            height: 40px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .shade .confirm .error {
+            margin-right: 10px;
+            transition: all 0.2s;
+        }
+        .shade .confirm .success {
+            margin-right: 20px;
+            border: 1px solid #409eff;
+            background-color: #409eff;
+            color: #fff;
+        }
+        .shade .confirm .error:hover {
+            border: 1px solid #409eff;
+        }
+    </style>
+    <!-- 提示信息 start -->
+    <!-- 遮罩层 start -->
+    <div class="shade" id="box">
+        <!-- 提示框信息 start -->
+        <div class="confirm">
+            <p class="title">提示信息</p>
+            <span class="whether" id="con"></span>
+            <br />
+            <button class="success">我知道啦</button>
+        </div>
+        <!-- 提示框信息 end -->
+    </div>
+    <!-- 遮罩层 end -->
+    <!-- 提示信息 end -->
+    <!-- 遮罩层 start -->
+    <div class="shade" id="shade">
+        <!-- 提示框信息 start -->
+        <div class="confirm">
+            <p class="title">提示</p>
+            <span class="whether">警告(warning)<i style="color: #000;">：</i><i style="color: #000;" id="content"></i></span>
+            <br />
+            <button class="success" id="success">确定</button>
+            <button class="error" id="error">取消</button>
+        </div>
+        <!-- 提示框信息 end -->
+    </div>
+    <!-- 遮罩层 end -->
+    <script src="js/jQuery.mini.js" type="text/javascript"></script>
+    <script src="js/Flibrary.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/register.js" type="text/javascript"></script>
+</body>
+</html>

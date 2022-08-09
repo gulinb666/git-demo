@@ -1,0 +1,31 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+}
+.main .addable {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+.main .addable span {
+    font-size: 14px;
+}
+.main .addable input[type="text"] {
+    width: 850px;
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main .addable input[placeholder] {
+    padding-left: 10px;
+}
+.main .addable input[type="submit"] {
+    width: 200px;
+    height: 30px;
+    margin: 20px 0 20px 400px;
+    background-color: #ffc0cb;
+    color: #fff;
+    cursor: pointer;
+}

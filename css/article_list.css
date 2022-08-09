@@ -1,0 +1,44 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+    background-color: #fff;
+}
+.main .article_list {
+    width: 800px;
+    margin: 30px 0 20px 90px;
+}
+.main .article_list ul a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.main .article_list ul a li {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.main .article_list ul a li span {
+    overflow: hidden;
+    display: -webkit-box;
+    width: 700px;
+    height: 35px;
+    margin-left: 80px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #333;
+}
+.main .article_list ul a li .read_count {
+    float: right;
+    margin-top: 20px;
+}
+.main .article_list ul a li img {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+}
+.main .article_list ul a:hover li span {
+    color: #ffc0cb;
+}
+.main .article_list ul a li img:hover {
+    opacity: 0.8;
+}

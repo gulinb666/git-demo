@@ -1,0 +1,62 @@
+.main {
+    position: relative;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .commodity {
+    width: 100%;
+    margin-top: 10px;
+}
+.main .commodity li {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin-left: 45px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.main .commodity li .commodity_upload {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+.main .commodity li .commodity_upload img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.main .commodity li h3 {
+    overflow: hidden;
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 12px;
+    /*弹性盒子模型显示*/
+    display: -webkit-box;
+    /*限制在一个块元素显示的文本行数*/
+    -webkit-line-clamp: 2;
+    /*设置或检索伸缩盒对象的子元素的排列方式*/
+    -webkit-box-orient: vertical;
+}
+.main .commodity li .price {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 12px;
+    font-size: 14px;
+    color: #ff0000;
+}
+.main .commodity li .price i {
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .commodity_all {
+    width: 100%;
+}
+.main .commodity_all .commodity li:hover {
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.09);
+}

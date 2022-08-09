@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: fixed;
+    background: url("../../images/admin_background.jpg") no-repeat;
+    background-size: 100%;
+}
+.main {
+    width: 500px;
+    height: 300px;
+    margin: 100px 0 0 350px;
+    background-color: rgba(255,255,255,0.3);
+}
+.main form {
+    margin: 20px 0 0 100px;
+}
+.main form input {
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+}

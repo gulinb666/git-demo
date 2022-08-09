@@ -1,0 +1,26 @@
+.main {
+    width: 95%;
+    margin: 1.3333rem 0 0 3%;
+    background-color: #fff;
+}
+.main h2 {
+    padding-top: .5333rem;
+    margin-left: 1.0667rem;
+}
+.main ul {
+    display: flex;
+}
+.main ul li {
+    margin-top: .2667rem;
+    margin-left: .2667rem;
+}
+.main ul li .author,
+.main ul li .release_time,
+.main ul li .read_count {
+    color: skyblue;
+}
+.main .content {
+    margin: .2667rem 0 0 .9333rem;
+    padding-bottom: .5333rem;
+    font-size: 16px;
+}

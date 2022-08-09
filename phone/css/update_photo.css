@@ -1,0 +1,43 @@
+form {
+    width: 90%;
+    margin: 1.3333rem 0 0 5%;
+}
+.btn {
+    width: 8rem;
+    height: 1.6rem;
+    margin-left: 1.3333rem;
+    background-color: #ffc0cb;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6rem;
+}
+form .upload {
+    position: relative;
+    display: inline-block;
+    width: 4.6667rem;
+    height: 4.6667rem;
+    border: 1px solid #ccc;
+    margin-left: .5333rem;
+}
+form .upload-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 3;
+    width: 4.6667rem;
+    height: 4.6667rem;
+}
+form .uploading {
+    margin-left: 1.6rem;
+    line-height: 4.5333rem;
+    font-size: 35px;
+}
+.upload_img {
+    display: none;
+    position: absolute;
+    top: .0533rem;
+    left: 1.76rem;
+    width: 4.5333rem;
+    height: 4.5333rem;
+}

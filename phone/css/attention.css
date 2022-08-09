@@ -1,0 +1,53 @@
+.goods-list {
+    position: relative;
+    width: 90%;
+    margin: 1.3333rem 0 0 5%;
+    background-color: #fff;
+}
+.goods-list img {
+    width: 5.3333rem;
+    height: 100%;
+}
+.goods-list a {
+    overflow: hidden;
+    position: absolute;
+    top: .5333rem;
+    left: 5.8667rem;
+    display: -webkit-box;
+    width: 13.6rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.goods-list p {
+    position: absolute;
+    bottom: 1.6rem;
+}
+.none {
+    display: none;
+    margin-top: 13.3333rem;
+}
+.ui-paging {
+    display: flex;
+    width: 22.4rem;
+    margin-top: .8rem;
+}
+.ui-paging .a,
+.ui-paging .active {
+    width: 2.6667rem;
+    height: 2.6667rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2.6667rem;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.ui-paging .icon {
+    width: 6.4rem;
+}
+.ui-paging .active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.ui-paging .a:hover {
+    background-color: #ddd;
+}

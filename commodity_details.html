@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "phone/commodity_details.html"; //手机
+        }
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+            window.location.href = "ie.html";
+        }
+    </script>
+    <title>顾里商城 - 商品详情</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/commodity_details.css">
+</head>
+<body>
+    <!-- 顶部导航栏 start -->
+    <div class="header-top">
+        <!-- 顶部导航的左侧导航 -->
+        <div class="left">
+            <a href="login.html">你好，请登录</a>&nbsp;
+            <a href="register.html" style="color: #ffc0cb;">免费注册</a>
+        </div>
+        <!-- 顶部导航的右侧导航 -->
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="member.html" class="indent">我的订单</a>
+                </li>
+                <li>
+                    <a href="member.html" class="member">个人中心</a>
+                </li>
+                <li id="serVice">
+                    <span>客户服务</span>
+                    <div class="service" id="service">
+                        <h3 style="text-align: center;">客户服务</h3>
+                        <a href="" style="display: inline-block;margin-top: 5px;margin-left: 5px;margin-bottom: 5px;">服务</a>
+                    </div>
+                </li>
+                <li id="Phone">
+                    <span>手机商城</span>
+                    <div class="phone" id="phone">
+                        <h3 style="margin-bottom: 10px;text-align: center;">手机商城</h3>
+                    </div>
+                </li>
+                <li id="navigAtion">
+                    <span>网站导航</span>
+                    <div class="navigation" id="navigation">
+                        <h3 style="margin-bottom: 10px;text-align: center;">网站导航</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部导航栏 end -->
+    <!-- 头部 start -->
+    <div class="header">
+        <div class="logo">
+            <h1 style="margin-left: -9999px;">顾里商城</h1>
+            <a href="index.html" title="顾里商城"></a>
+        </div>
+        <!-- 搜索框 start -->
+        <div class="search">
+            <form action="search.html">
+                <input type="text" class="search_inp" name="search" placeholder="黑丝">
+                <input type="submit" class="search_btn" value="&#xe82e;">
+            </form>
+        </div>
+        <!-- 搜索框 end -->
+        <!-- 搜索框下面的活动 start -->
+        <div class="activity">
+            <ul class="activity_module">
+                <li>
+                    <a href="#" style="color: #ffc0cb;" title="满199减99元">满199减99元</a>
+                </li>
+                <li>
+                    <a href="#" title="0元购">限时0元抢</a>
+                </li>
+                <li>
+                    <a href="#" title="超低价秒杀">低价秒杀</a>
+                </li>
+                <li>
+                    <a href="#" title="领取优惠券">优惠券</a>
+                </li>
+                <li>
+                    <a href="#" title="热卖新品">爆款新品</a>
+                </li>
+                <li>
+                    <a href="#" title="新年大促">新年大促</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 搜索框下面的活动 end -->
+        <!-- 购物车 start -->
+        <div class="shop_car" id="shop_car">
+            <i class="shop_car_icon">&#xe64d;</i>
+            <span class="text">购物车</span>
+            <p class="count_shop_car">
+                <i style="position: relative;top: -16px;">0</i>
+            </p>
+        </div>
+        <!-- 购物车 end -->
+        <!-- 分类 start -->
+        <div class="classify">
+        </div>
+        <!-- 分类 end -->
+    </div>
+    <!-- 头部 end -->
+    <!-- 主体 start -->
+    <div class="main">
+        <!-- 商品栏左上部分 start -->
+        <img src="upload/20220104_1.jpg" alt="" class="commodity_img" id="img">
+        <!-- 这是商品图片轮播图 -->
+        <div class="small_img">
+            <span class="small_img_left" id="left_btn"></span>
+            <div class="small_img_main">
+                <ul id="small_img_main">
+                    <li class="small_img_border">
+                        <img src="upload/20220104_1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="upload/20220104_2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="upload/20220104_3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="upload/20220104_4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="upload/20220104_5.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="upload/20220104_6.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <span class="small_img_right" id="right_btn"></span>
+        </div>
+        <span class="concern"><i>&#xf0054;</i> 关注</span>
+        <!-- 商品栏左上部分 end -->
+        <!-- 商品栏右上部分 start -->
+        <div class="main_right_top">
+            <div class="title">
+                <h2>AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</h2>
+            </div>
+            <div class="price">
+                <span style="margin-left: 10px;color: #666;font-size: 16px;">价钱：</span>
+                <span style="color: #ff0000;font-size: 14px;">￥<i style="font-size: 20px;" id="price"></i></span>
+                <span class="evaluate">累计评价：<i style="color: #ffc0cb;font-size: 18px;">66</i></span>
+            </div>
+            <div class="specification" id="specification">
+                <span style="color: #666;">选择规格：</span>
+                <span class="option" style="border: 1px solid #ffc0cb;">S</span>
+                <span class="option">M</span>
+                <span class="option">L</span>
+                <span class="option">XL</span>
+            </div>
+            <input type="text" class="number" value="" id="number">
+            <span class="plus" id="plus">+</span>
+            <span class="minus" id="minus">-</span>
+            <a href="indent.html" class="orders">立即下单</a>
+            <a href="shopcar.html" class="add_shop_car">加入购物车</a>
+        </div>
+        <!-- 商品栏右上部分 end -->
+        <!-- 商品详情部分 start -->
+        <div class="particulars">
+            <ul class="particulars_tab" id="particulars_tab">
+                <li class="particulars_tab_pink">商品介绍</li>
+                <li>商品评价(66)</li>
+            </ul>
+            <!-- 商品介绍内容 start -->
+            <div class="introduce_one">
+                <div class="introduce">
+                    <p>商品名称： AUI 欧洲站连衣裙女春2021新品设计感时尚女装拼接雪纺长袖衬衫裙子</p>
+                    <p>商品编号：20220104_01</p>
+                    <p>商品分类：女装</p>
+                </div>
+                <div class="introduce_commodity">
+                    <!-- 这边是通过js添加现在只是测试使用 -->
+                    <img src="upload/20220104_js01.jpg" alt="">
+                    <img src="upload/20220104_js02.jpg" alt="">
+                    <img src="upload/20220104_js03.jpg" alt="">
+                    <img src="upload/20220104_js04.jpg" alt="">
+                    <img src="upload/20220104_js05.jpg" alt="">
+                    <img src="upload/20220104_js06.jpg" alt="">
+                    <img src="upload/20220104_js07.jpg" alt="">
+                    <img src="upload/20220104_js08.jpg" alt="">
+                    <img src="upload/20220104_js09.jpg" alt="">
+                    <img src="upload/20220104_js10.jpg" alt="">
+                    <img src="upload/20220104_js11.jpg" alt="">
+                    <img src="upload/20220104_js12.jpg" alt="">
+                    <img src="upload/20220104_js13.jpg" alt="">
+                </div>
+            </div>
+            <!-- 商品介绍内容 end -->
+            <!-- 商品评价内容 start -->
+            <div class="introduce_one" style="display: none">
+                <div class="evaluate">
+                    <h3 style="margin-left: 10px;line-height: 40px;">商品评价</h3>
+                </div>
+                <!-- 评论样式 start -->
+                <div class="evaluate_commodity">
+                    <img src="upload/photo.webp" alt="" class="user_img">
+                    <span>这是用户名</span>
+                    <span class="count_star">&#xe634;&#xe634;&#xe634;&#xe634;&#xe634;</span>
+                    <p class="evaluate_content">质量很好！！！</p>
+                    <!-- 这里是上传图片的用户评价样式 -->
+                    <img src="upload/2022102_1.jpg" alt="" class="user_evaluate_img first">
+                    <img src="upload/2022103_1.webp" alt="" class="user_evaluate_img">
+                    <div class="times">
+                        <span style="display: inline-block;margin-top: 10px;margin-left: 225px;">20220104 22:13:37</span>
+                        <div class="right_function">
+                            <a href="">举报</a>
+                            <span>&#xe6bf;</span>
+                            <i>0</i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论样式 end -->
+            </div>
+            <!-- 商品评价内容 end -->
+        </div>
+        </div>
+        <!-- 商品详情部分 end -->
+    </div>
+    <!-- 主体 end -->
+    <!-- 底部 start -->
+    <div class="footer">
+        <a href="">关于我们 |</a>
+        <a href="">联系我们 |</a>
+        <a href="">联系客服 |</a>
+        <a href="">友情链接 |</a>
+        <a href="">手机商城 |</a>
+        <a href="">隐私政策 |</a>
+        <a href="">免责声明</a>
+        <p style="margin-top: 5px;color: #666;">copyright: © 2022-2044 顾里商城ggsch.cn 版权所有</p>
+    </div>
+    <!-- 底部 end -->
+    <script src="js/jQuery.mini.js" type="text/javascript"></script>
+    <script src="js/Flibrary.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/commodity_details.js" type="text/javascript"></script>
+</body>
+</html>

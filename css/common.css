@@ -1,0 +1,326 @@
+﻿/* 字体图标配置 */
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('../ali_fonts/iconfont.ttf?t=1640952652061') format('truetype');
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../icon_fonts/fonts/icomoon.eot?kw1b6v');
+    src:  url('../icon_fonts/fonts/icomoon.eot?kw1b6v#iefix') format('embedded-opentype'),
+      url('../icon_fonts/fonts/icomoon.ttf?kw1b6v') format('truetype'),
+      url('../icon_fonts/fonts/icomoon.woff?kw1b6v') format('woff'),
+      url('../icon_fonts/fonts/icomoon.svg?kw1b6v#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/* 基础配置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+i,
+em {
+    font-style: normal;
+}
+input {
+    border: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+li {
+    list-style: none;
+}
+textarea {
+    resize: none;
+    outline: none;
+    border: none;
+}
+/* 顶部导航栏 start */
+.header-top {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #f2f2f2;
+    line-height: 30px;
+}
+/* 顶部导航栏的左侧导航 */
+.header-top .left {
+    margin-left: 100px;
+}
+/* 顶部导航栏的右侧导航 */
+.header-top .right {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    width: 500px;
+    height: 30px;
+}
+.header-top .right ul li {
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+.header-top .right ul li:last-child {
+    margin-right: 0;
+}
+.indent,
+.member {
+    cursor: pointer;
+}
+/* 画竖线 */
+.header-top .right ul li:nth-child(-n+4)::after {
+    position: absolute;
+    top: 11px;
+    right: -26px;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    content: "";
+}
+/* 画三角 */
+.header-top .right ul li:nth-child(n+3)::before {
+    position: absolute;
+    top: 11px;
+    right: -13px;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid #ffc0cb;
+    border-bottom: 1px solid #ffc0cb;
+    transform: rotate(45deg);
+    transition: all 0.4s;
+    content: "";
+}
+/* 鼠标经过三角形旋转 */
+.header-top .right ul li:nth-child(n+2):hover::before {
+    top: 46%;
+    transform: rotate(225deg);
+}
+/* 鼠标经过修改文字颜色 */
+.header-top a:hover,
+.header-top .indent:hover,
+.header-top .member:hover {
+    color: #ffc0cb;
+}
+/* 顶部导航栏 end */
+/* 头部 start */
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+.header .logo {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+}
+.header .logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-top: -65px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.header .search {
+    position: absolute;
+    top: 40px;
+    left: 378px;
+    width: 491px;
+    height: 41px;
+    border: 2px solid #ffc0cb;
+    cursor: text;
+}
+.header .search .search_value {
+    margin-left: 3%;
+    margin-top: 2%;
+    color: #989898;
+}
+.header .search form .search_inp {
+    position: absolute;
+    top: 0;
+    width: 414px;
+    height: 37px;
+    margin-left: 15px;
+    background-color: rgba(255,255,255,0.3);
+}
+.header .search form .search_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 37px;
+    background-color: #ffc0cb;
+    cursor: pointer;
+}
+.header .search .search_btn[value] {
+    color: #fff;
+    font-family: 'iconfont';
+    font-size: 15px;
+}
+.header .activity {
+    position: absolute;
+    top: 85px;
+    left: 380px;
+    width: 374px;
+}
+.header .activity .activity_module li {
+    float: left;
+    margin-right: 10px;
+}
+.header .activity .activity_module li a:hover {
+    color: #ffc0cb;
+}
+/* 购物车 */
+.header .shop_car {
+    position: absolute;
+    top: 41px;
+    right: 215px;
+    width: 145px;
+    height: 40px;
+    border: 1px solid #f5f5f5;
+    color: #ffc0cb;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+}
+.header .shop_car .shop_car_icon {
+    margin-right: 5px;
+    font-family: 'iconfont';
+    font-weight: bold;
+    font-size: 14px;
+}
+.header .shop_car .text {
+    position: relative;
+}
+.header .shop_car .text::after {
+    position: absolute;
+    top: -12px;
+    content: '\ea53';
+    font-family: 'icomoon';
+    font-size: 16px;
+}
+.header .shop_car .count_shop_car {
+    position: absolute;
+    top: -8px;
+    left: 54px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ffc0cb;
+    color: #333;
+}
+.header .shop_car:hover {
+    border: 1px solid #ffc0cb;
+}
+.header .classify {
+    position: absolute;
+    top: 160px;
+    left: 380px;
+    width: 700px;
+    height: 40px;
+}
+.header .classify ul li {
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header .classify ul li:last-child {
+    position: relative;
+}
+.header .classify ul li:last-child::after {
+    position: absolute;
+    top: 0;
+    content: '\ea50';
+    font-family: 'icomoon';
+}
+.header .classify ul li a:hover {
+    color: #ffc0cb;
+}
+/* 头部 end */
+/* 底部 start */
+.footer {
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    border-top: 1px solid #ccc;
+}
+.footer a:hover {
+    color: #ffc0cb;
+}
+/* 底部 end */
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+.service {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    width: 97px;
+    background-color: #ffc0cb;
+    z-index: 999;
+    opacity: 0.8;
+}
+.phone {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    width: 97px;
+    background-color: #ffc0cb;
+    opacity: 0.8;
+    z-index: 999;
+}
+.navigation {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    width: 97px;
+    background-color: #ffc0cb;
+    opacity: 0.8;
+    z-index: 999;
+}
+.classify_more {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 500px;
+    height: 300px;
+    background-color: #ffc0cb;
+    z-index: 999;
+}
+.right ul li div a:hover,
+.classify_more a:hover {
+    color: #666 !important;
+    text-decoration: underline !important;
+}

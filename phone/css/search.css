@@ -1,0 +1,74 @@
+.header {
+    width: 100%;
+    height: 5.3333rem;
+    padding-top: 6%;
+    background-color: #fff;
+}
+.header form .return {
+    margin-left: 3%;
+    font-size: 18px;
+}
+.header form input[type="text"] {
+    width: 15.4667rem;
+    height: 2.1333rem;
+    margin-left: 8%;
+    border: 1px solid #ccc;
+    border-radius: 1.2rem;
+}
+.header form input[type="text"][placeholder] {
+    padding-left: 1.0667rem;
+}
+.header form input[type="submit"] {
+    margin-left: 5%;
+    background-color: #fff;
+}
+.search-record {
+    width: 100%;
+}
+.goods {
+    margin-left: 5%;
+    width: 90%;
+}
+.goods ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.goods ul a {
+    width: 45%;
+    height: 13.3333rem;
+    margin: 1.0667rem .6667rem 0 0;
+    border-radius: .4rem;
+    background-color: #fff;
+}
+.goods ul a:nth-child(even) {
+    margin-right: 0;
+    margin-left: 1.2rem;
+}
+.goods ul a li {
+    width: 90%;
+    height: 8rem;
+    margin-bottom: 2.6667rem;
+}
+.goods ul a li img {
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+    border-radius: .4rem;
+}
+.goods ul a li h3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-left: .8rem;
+    font-weight: normal;
+}
+.goods ul a li p {
+    margin: .5333rem 0 .2667rem .8rem;
+    color: #ff0000;
+}
+.search-count {
+    padding-top: 1.0667rem;
+    text-align: center;
+}

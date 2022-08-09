@@ -1,0 +1,50 @@
+.main {
+    width: 1000px;
+    margin: 10px 0 0 100px;
+}
+.main .sheet-table-data-center {
+    width: 1000px;
+    height: 240px;
+    margin-top: 20px;
+}
+.main .sheet-table-data-center ul li {
+    float: left;
+    width: 100px;
+    height: 70px;
+    margin: 20px;
+    background-color: #fff;
+}
+.main .sheet-table-data-center ul li p {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.main .sheet-table-data-center ul li p:first-child {
+    color: #666;
+}
+.main .version {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    margin-left: 380px;
+    background-color: #fff;
+}
+.main .version p {
+    text-align: center;
+    font-size: 18px;
+}
+.main .version p:first-child {
+    padding-top: 30px;
+}
+.main .version a {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0 0 55px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 40px;
+}
+.main .version a:hover {
+    background-color: #ccc;
+}
